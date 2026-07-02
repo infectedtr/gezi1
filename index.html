@@ -1,0 +1,3814 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>🌍 Baltık Ülkeleri ve İskandinavya Seyahat Rehberi</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --primary: #38bdf8;
+            --primary-glow: rgba(56, 189, 248, 0.3);
+            --success: #10b981;
+            --success-glow: rgba(16, 185, 129, 0.2);
+            --warning: #f59e0b;
+            --warning-glow: rgba(245, 158, 11, 0.2);
+            --danger: #ef4444;
+            --danger-glow: rgba(239, 68, 68, 0.2);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #818cf8;
+            --kadayifci: #ec4899;
+            --tekatli: #10b981;
+            --ozdemir: #f59e0b;
+            --header-gradient-start: rgba(30, 41, 59, 0.8);
+            --header-gradient-end: rgba(15, 23, 42, 0.9);
+            --modal-bg: linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(30, 41, 59, 0.95));
+            --tab-active-text: #0f172a;
+            --table-bg: rgba(15, 23, 42, 0.4);
+            --settlement-bg: linear-gradient(135deg, rgba(30, 41, 59, 0.5), rgba(15, 23, 42, 0.7));
+            --input-bg: rgba(15, 23, 42, 0.6);
+            --event-hover: rgba(255, 255, 255, 0.04);
+            --dot-glow-off: 0;
+            --bg-card-top: rgba(30, 41, 59, 0.5);
+            --title-grad-1: #ffffff;
+            --title-grad-2: #94a3b8;
+            --route-line: rgba(255, 255, 255, 0.1);
+            --tabs-border: rgba(255, 255, 255, 0.05);
+            --scrollbar-thumb: rgba(255, 255, 255, 0.1);
+            --tab-bg: rgba(255, 255, 255, 0.03);
+            --tab-border: rgba(255, 255, 255, 0.05);
+            --tab-hover-bg: rgba(255, 255, 255, 0.08);
+            --tab-hover-border: rgba(255, 255, 255, 0.15);
+            --tab-active-shadow: rgba(56, 189, 248, 0.3);
+            --dayoverview-bg: rgba(255, 255, 255, 0.02);
+            --event-bg: rgba(255, 255, 255, 0.02);
+            --event-border: rgba(255, 255, 255, 0.04);
+            --meta-bg: rgba(0, 0, 0, 0.15);
+            --meta-border: rgba(255, 255, 255, 0.02);
+            --widget-border: rgba(255, 255, 255, 0.05);
+            --widget-line: rgba(255, 255, 255, 0.05);
+            --summary-card-bg: rgba(255, 255, 255, 0.02);
+            --summary-border: rgba(255, 255, 255, 0.04);
+            --passenger-bg: rgba(255, 255, 255, 0.02);
+            --passenger-border: rgba(255, 255, 255, 0.04);
+            --passenger-hover-bg: rgba(255, 255, 255, 0.06);
+            --passenger-hover-border: rgba(255, 255, 255, 0.1);
+            --passenger-active-bg: rgba(56, 189, 248, 0.08);
+            --overlay-bg: rgba(0, 0, 0, 0.65);
+            --modal-header-border: rgba(255, 255, 255, 0.08);
+            --modal-bg-hover: rgba(255, 255, 255, 0.02);
+            --modal-meta-bg: rgba(255, 255, 255, 0.02);
+            --modal-meta-border: rgba(255, 255, 255, 0.04);
+            --check-bg: rgba(255, 255, 255, 0.01);
+            --check-border: rgba(255, 255, 255, 0.02);
+            --main-border: rgba(255, 255, 255, 0.08);
+            --main-tab-bg: rgba(255, 255, 255, 0.02);
+            --main-tab-border: rgba(255, 255, 255, 0.05);
+            --main-tab-hover-bg: rgba(255, 255, 255, 0.06);
+            --main-tab-hover-border: rgba(255, 255, 255, 0.1);
+            --filter-border: rgba(255, 255, 255, 0.1);
+            --table-line: rgba(255, 255, 255, 0.04);
+            --th-bg: rgba(30, 41, 59, 0.5);
+            --tr-hover-bg: rgba(255, 255, 255, 0.015);
+            --settlement-item-bg: rgba(255, 255, 255, 0.02);
+            --settlement-item-border: rgba(255, 255, 255, 0.04);
+            --settlement-item-hover-bg: rgba(255, 255, 255, 0.03);
+            --settlement-item-hover-border: rgba(255, 255, 255, 0.08);
+            --direction-bg: rgba(255, 255, 255, 0.03);
+            --direction-border: rgba(255, 255, 255, 0.04);
+            --direction-hover-bg: rgba(56, 189, 248, 0.08);
+            --direction-hover-border: rgba(56, 189, 248, 0.2);
+            --budget-row-line: rgba(255, 255, 255, 0.05);
+        }
+
+        body.light-mode {
+            --bg-color: #f0f4f8;
+            --card-bg: rgba(255, 255, 255, 0.85);
+            --card-border: rgba(0, 0, 0, 0.08);
+            --primary: #0284c7;
+            --primary-glow: rgba(2, 132, 199, 0.2);
+            --success: #059669;
+            --success-glow: rgba(5, 150, 105, 0.15);
+            --warning: #d97706;
+            --warning-glow: rgba(217, 119, 6, 0.15);
+            --danger: #dc2626;
+            --danger-glow: rgba(220, 38, 38, 0.15);
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent: #6366f1;
+            --kadayifci: #db2777;
+            --tekatli: #059669;
+            --ozdemir: #d97706;
+            --header-gradient-start: rgba(255, 255, 255, 0.9);
+            --header-gradient-end: rgba(240, 244, 248, 0.95);
+            --modal-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(240, 244, 248, 0.95));
+            --tab-active-text: #ffffff;
+            --table-bg: rgba(255, 255, 255, 0.6);
+            --settlement-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(240, 244, 248, 0.8));
+            --input-bg: rgba(255, 255, 255, 0.8);
+            --event-hover: rgba(0, 0, 0, 0.03);
+            --dot-glow-off: 1;
+            --bg-card-top: rgba(0, 0, 0, 0.03);
+            --title-grad-1: #0f172a;
+            --title-grad-2: #475569;
+            --route-line: rgba(0, 0, 0, 0.1);
+            --tabs-border: rgba(0, 0, 0, 0.06);
+            --scrollbar-thumb: rgba(0, 0, 0, 0.1);
+            --tab-bg: rgba(0, 0, 0, 0.02);
+            --tab-border: rgba(0, 0, 0, 0.05);
+            --tab-hover-bg: rgba(0, 0, 0, 0.04);
+            --tab-hover-border: rgba(0, 0, 0, 0.1);
+            --tab-active-shadow: rgba(2, 132, 199, 0.3);
+            --dayoverview-bg: rgba(0, 0, 0, 0.02);
+            --event-bg: rgba(0, 0, 0, 0.01);
+            --event-border: rgba(0, 0, 0, 0.05);
+            --meta-bg: rgba(0, 0, 0, 0.04);
+            --meta-border: rgba(0, 0, 0, 0.03);
+            --widget-border: rgba(0, 0, 0, 0.05);
+            --widget-line: rgba(0, 0, 0, 0.06);
+            --summary-card-bg: rgba(0, 0, 0, 0.02);
+            --summary-border: rgba(0, 0, 0, 0.04);
+            --passenger-bg: rgba(0, 0, 0, 0.02);
+            --passenger-border: rgba(0, 0, 0, 0.04);
+            --passenger-hover-bg: rgba(0, 0, 0, 0.03);
+            --passenger-hover-border: rgba(0, 0, 0, 0.08);
+            --passenger-active-bg: rgba(2, 132, 199, 0.08);
+            --overlay-bg: rgba(100, 100, 100, 0.6);
+            --modal-header-border: rgba(0, 0, 0, 0.08);
+            --modal-bg-hover: rgba(0, 0, 0, 0.02);
+            --modal-meta-bg: rgba(0, 0, 0, 0.02);
+            --modal-meta-border: rgba(0, 0, 0, 0.04);
+            --check-bg: rgba(0, 0, 0, 0.01);
+            --check-border: rgba(0, 0, 0, 0.03);
+            --main-border: rgba(0, 0, 0, 0.07);
+            --main-tab-bg: rgba(0, 0, 0, 0.02);
+            --main-tab-border: rgba(0, 0, 0, 0.05);
+            --main-tab-hover-bg: rgba(0, 0, 0, 0.03);
+            --main-tab-hover-border: rgba(0, 0, 0, 0.08);
+            --filter-border: rgba(0, 0, 0, 0.12);
+            --table-line: rgba(0, 0, 0, 0.05);
+            --th-bg: rgba(200, 200, 200, 0.3);
+            --tr-hover-bg: rgba(0, 0, 0, 0.015);
+            --settlement-item-bg: rgba(0, 0, 0, 0.02);
+            --settlement-item-border: rgba(0, 0, 0, 0.04);
+            --settlement-item-hover-bg: rgba(0, 0, 0, 0.03);
+            --settlement-item-hover-border: rgba(0, 0, 0, 0.08);
+            --direction-bg: rgba(0, 0, 0, 0.03);
+            --direction-border: rgba(0, 0, 0, 0.04);
+            --direction-hover-bg: rgba(2, 132, 199, 0.08);
+            --direction-hover-border: rgba(2, 132, 199, 0.2);
+            --budget-row-line: rgba(0, 0, 0, 0.06);
+        }
+
+        body.light-mode .table-container {
+            background: rgba(248, 250, 252, 0.95);
+        }
+
+        body.light-mode .expense-table th {
+            background: rgba(240, 240, 248, 0.6);
+        }
+
+        body.light-mode .settlement-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(240, 244, 248, 0.85));
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            overflow-x: hidden;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(129, 140, 248, 0.05) 0%, transparent 40%);
+            background-attachment: fixed;
+            padding-bottom: 60px;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Card */
+        header {
+            background: linear-gradient(135deg, var(--header-gradient-start), var(--header-gradient-end));
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 30px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(16px);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--accent), var(--kadayifci));
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .title-area h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(to right, var(--title-grad-1), var(--title-grad-2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+        }
+
+        .title-area p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .header-badge {
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 99px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 0 15px var(--primary-glow);
+        }
+
+        /* SVG Route Map */
+        .route-map-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(12px);
+        }
+
+        .route-title {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .route-svg-container {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            padding: 10px 0;
+        }
+
+        .route-svg {
+            min-width: 900px;
+            height: 80px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 640px) {
+            .route-svg {
+                min-width: 700px;
+                height: 70px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .route-svg {
+                min-width: 600px;
+                height: 60px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .route-svg {
+                min-width: 500px;
+                height: 55px;
+            }
+        }
+
+        /* Dashboard Grid Layout */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 25px;
+        }
+
+        @media (max-width: 968px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Navigation Tabs for Timeline */
+        .timeline-container {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 25px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.3);
+        }
+
+        .tabs-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tabs-scroll {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 8px;
+            width: 100%;
+        }
+
+        .tabs-scroll::-webkit-scrollbar {
+            height: 4px;
+        }
+
+        .tabs-scroll::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+        }
+
+        .tab-btn {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-muted);
+            padding: 10px 16px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            white-space: nowrap;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 80px;
+            min-height: 56px;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+            touch-action: manipulation;
+        }
+
+        .tab-btn span.day-num {
+            font-size: 1.1rem;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+            margin-bottom: 2px;
+        }
+
+        .tab-btn:hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text-main);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: var(--tab-active-text);
+            border-color: var(--primary);
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Timeline Cards */
+        .timeline-day-panel {
+            display: none;
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+
+        .timeline-day-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .day-overview {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 16px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .day-overview-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--text-main);
+        }
+
+        .day-overview-subtitle {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .event-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 18px;
+            padding: 20px;
+            margin-bottom: 15px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .event-card:hover {
+            border-color: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.04);
+            transform: translateX(4px);
+        }
+
+        /* Custom Event Card Types */
+        .event-card.flight { border-left: 4px solid var(--primary); }
+        .event-card.bus { border-left: 4px solid var(--warning); }
+        .event-card.ferry { border-left: 4px solid var(--accent); }
+        .event-card.train { border-left: 4px solid #f43f5e; }
+        .event-card.hotel { border-left: 4px solid var(--success); }
+
+        .event-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .event-time {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .event-badge {
+            padding: 4px 10px;
+            border-radius: 99px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-flight { background: rgba(56, 189, 248, 0.1); color: var(--primary); border: 1px solid rgba(56, 189, 248, 0.2); }
+        .badge-bus { background: rgba(245, 158, 11, 0.1); color: var(--warning); border: 1px solid rgba(245, 158, 11, 0.2); }
+        .badge-ferry { background: rgba(129, 140, 248, 0.1); color: var(--accent); border: 1px solid rgba(129, 140, 248, 0.2); }
+        .badge-train { background: rgba(244, 63, 94, 0.1); color: #f43f5e; border: 1px solid rgba(244, 63, 94, 0.2); }
+        .badge-hotel { background: rgba(16, 185, 129, 0.1); color: var(--success); border: 1px solid rgba(16, 185, 129, 0.2); }
+
+        .event-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 6px;
+        }
+
+        .event-detail {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+
+        .event-meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            background: rgba(0, 0, 0, 0.15);
+            padding: 12px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.02);
+        }
+
+        .meta-item {
+            font-size: 0.85rem;
+        }
+
+        .meta-label {
+            color: var(--text-muted);
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+
+        .meta-value {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        .meta-highlight {
+            color: var(--primary);
+        }
+
+        /* Sidebar Widgets */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .widget {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 25px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.3);
+        }
+
+        .widget-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 12px;
+        }
+
+        /* Budget Widget specific */
+        .budget-summary-card {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 16px;
+            padding: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            margin-bottom: 15px;
+        }
+
+        .budget-amount {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-top: 5px;
+        }
+
+        .budget-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        .budget-row:last-child {
+            margin-bottom: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 8px;
+        }
+
+        .budget-val-try {
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        /* Passenger Interactive Split */
+        .passenger-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .passenger-row {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 14px;
+            padding: 12px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-height: 52px;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+            touch-action: manipulation;
+        }
+
+        .passenger-row:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.1);
+            transform: translateX(3px);
+        }
+
+        .passenger-row.active {
+            background: rgba(56, 189, 248, 0.08);
+            border-color: var(--primary);
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.1);
+        }
+
+        .pass-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .pass-name-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50px;
+            flex-shrink: 0;
+        }
+
+        .dot-kadayifci { background-color: var(--kadayifci); box-shadow: 0 0 8px var(--kadayifci); }
+        .dot-tekatli { background-color: var(--tekatli); box-shadow: 0 0 8px var(--tekatli); }
+        .dot-ozdemir { background-color: var(--ozdemir); box-shadow: 0 0 8px var(--ozdemir); }
+
+        .pass-cost {
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            white-space: nowrap;
+        }
+
+        /* Fullscreen overlay modal for passenger details */
+        .passenger-modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            animation: overlayFadeIn 0.25s ease-out;
+            padding: 16px;
+        }
+
+        .passenger-modal-overlay.active {
+            display: flex;
+        }
+
+        @keyframes overlayFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .passenger-details-modal {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(30, 41, 59, 0.95));
+            border: 1px solid var(--primary);
+            border-radius: 24px;
+            padding: 28px 32px;
+            width: 100%;
+            max-width: 520px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 40px var(--primary-glow);
+            animation: modalSlideUp 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        @keyframes modalSlideUp {
+            from { opacity: 0; transform: translateY(30px) scale(0.95); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding-bottom: 12px;
+        }
+
+        .modal-title {
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            word-break: break-word;
+        }
+
+        .modal-close {
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 1.6rem;
+            transition: all 0.2s;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            flex-shrink: 0;
+        }
+
+        .modal-close:hover {
+            color: var(--danger);
+            background: rgba(239, 68, 68, 0.1);
+            transform: rotate(90deg);
+        }
+
+        .modal-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            transition: background 0.2s;
+            gap: 12px;
+        }
+
+        .modal-row:hover {
+            background: rgba(255, 255, 255, 0.02);
+            margin: 0 -8px;
+            padding-left: 8px;
+            padding-right: 8px;
+            border-radius: 8px;
+        }
+
+        .modal-row.total {
+            border-top: 2px dashed var(--primary);
+            border-bottom: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-top: 10px;
+            padding-top: 14px;
+        }
+
+        .modal-row.total:hover {
+            background: transparent;
+            margin: 10px 0 0 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .modal-meta {
+            display: flex;
+            gap: 20px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 10px 14px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .modal-meta span strong {
+            color: var(--text-main);
+        }
+
+        /* Luggage & Document Checklist Widget */
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            background: rgba(255, 255, 255, 0.01);
+            padding: 10px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.02);
+        }
+
+        .check-box {
+            color: var(--success);
+            font-weight: bold;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .check-box.warn {
+            color: var(--warning);
+        }
+
+        .check-content strong {
+            color: var(--text-main);
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .check-content p {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        /* SVG icon style */
+        .icon {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+            display: inline-block;
+            vertical-align: middle;
+            flex-shrink: 0;
+        }
+
+        /* --- Dynamic Budget & Harcamalar Section Styles --- */
+        .main-tabs {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding-bottom: 12px;
+        }
+        .main-tab-btn {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-muted);
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            flex: 1;
+            min-height: 48px;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+            touch-action: manipulation;
+        }
+        .main-tab-btn:hover {
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text-main);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        .main-tab-btn.active {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: #0f172a;
+            border-color: var(--primary);
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+            transform: translateY(-1px);
+        }
+        .filter-bar {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .filter-input, .filter-select {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-main);
+            padding: 10px 14px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            font-family: inherit;
+            min-height: 44px;
+        }
+        .filter-input:focus, .filter-select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 10px var(--primary-glow);
+        }
+        .filter-input {
+            flex: 1;
+            min-width: 200px;
+        }
+        .filter-select {
+            min-width: 150px;
+            cursor: pointer;
+        }
+        .filter-select option {
+            background: var(--bg-color);
+            color: var(--text-main);
+        }
+        .table-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            background: rgba(15, 23, 42, 0.4);
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+            position: relative;
+        }
+
+        .table-container::after {
+            content: '← Kaydır →';
+            display: none;
+            position: absolute;
+            bottom: 4px;
+            right: 8px;
+            background: rgba(56, 189, 248, 0.15);
+            color: var(--primary);
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 99px;
+            pointer-events: none;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        @media (max-width: 640px) {
+            .table-container::after {
+                display: block;
+            }
+        }
+
+        .expense-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+            text-align: left;
+        }
+        .expense-table th, .expense-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .expense-table th {
+            background: rgba(30, 41, 59, 0.5);
+            font-weight: 600;
+            color: var(--text-muted);
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+            font-size: 0.78rem;
+            letter-spacing: 0.5px;
+        }
+        .expense-table tr:hover td {
+            background: rgba(255, 255, 255, 0.015);
+        }
+        .tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .tag-payer {
+            border: 1px solid transparent;
+        }
+        .tag-payer.ekrem { background: rgba(16, 185, 129, 0.12); color: #10b981; border-color: rgba(16, 185, 129, 0.3); }
+        .tag-payer.gültekin { background: rgba(236, 72, 153, 0.12); color: #ec4899; border-color: rgba(236, 72, 153, 0.3); }
+        .tag-payer.fatih { background: rgba(56, 189, 248, 0.12); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3); }
+        .tag-payer.split { background: rgba(245, 158, 11, 0.12); color: var(--warning); border-color: rgba(245, 158, 11, 0.3); }
+        
+        .cell-debt-colored {
+            font-weight: 600;
+        }
+        .cell-debt-colored.ekrem { color: #10b981; }
+        .cell-debt-colored.gültekin { color: #ec4899; }
+        .cell-debt-colored.fatih { color: #38bdf8; }
+        
+        .settlement-card {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.5), rgba(15, 23, 42, 0.7));
+            border: 1px solid var(--card-border);
+            border-radius: 18px;
+            padding: 22px;
+            margin-top: 25px;
+            backdrop-filter: blur(12px);
+        }
+        .settlement-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .settlement-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .settlement-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 12px;
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+        .settlement-item:hover {
+            border-color: rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.03);
+            transform: translateY(-1px);
+        }
+        .settlement-party {
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .settlement-arrow {
+            color: var(--text-muted);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .settlement-val {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+
+        /* ============================== */
+        /* MOBILE RESPONSIVE BREAKPOINTS  */
+        /* ============================== */
+
+        /* --- Tablet & Small Laptop (≤768px) --- */
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px;
+            }
+
+            /* Header */
+            header {
+                padding: 20px 16px;
+                border-radius: 18px;
+                margin-bottom: 16px;
+            }
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+            .title-area h1 {
+                font-size: 1.5rem;
+            }
+            .title-area p {
+                font-size: 0.85rem;
+            }
+            .header-badge {
+                font-size: 0.78rem;
+                padding: 6px 12px;
+            }
+
+            /* Route Map */
+            .route-map-card {
+                padding: 14px;
+                border-radius: 16px;
+                margin-bottom: 16px;
+            }
+            .route-title {
+                font-size: 0.95rem;
+            }
+            .route-svg-container {
+                -webkit-overflow-scrolling: touch;
+            }
+
+            /* Dashboard Grid — already 1-col via existing 968px rule */
+            .dashboard-grid {
+                gap: 16px;
+            }
+
+            /* Timeline Container */
+            .timeline-container {
+                padding: 16px;
+                border-radius: 18px;
+            }
+
+            /* Main Tabs (Itinerary / Budget toggle) — stack vertically on tablet */
+            .main-tabs {
+                flex-direction: column;
+                gap: 6px;
+                margin-bottom: 16px;
+                padding-bottom: 10px;
+            }
+            .main-tab-btn {
+                padding: 12px 14px;
+                font-size: 0.82rem;
+                border-radius: 10px;
+                gap: 6px;
+                flex: unset;
+                width: 100%;
+                min-height: 48px;
+            }
+            .main-tab-btn .icon {
+                width: 16px;
+                height: 16px;
+            }
+
+            /* Day Tabs */
+            .tabs-header {
+                margin-bottom: 14px;
+                padding-bottom: 10px;
+            }
+            .tabs-header h2 {
+                font-size: 1.15rem !important;
+            }
+            .tab-btn {
+                padding: 8px 12px;
+                min-width: 64px;
+                min-height: 52px;
+                font-size: 0.78rem;
+                border-radius: 10px;
+            }
+            .tab-btn span.day-num {
+                font-size: 0.95rem;
+            }
+
+            /* Day Overview */
+            .day-overview {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+                padding: 12px 14px;
+                border-radius: 12px;
+            }
+            .day-overview-title {
+                font-size: 1.05rem;
+            }
+            .day-overview div[style*="text-align: right"] {
+                text-align: left !important;
+            }
+
+            /* Event Cards */
+            .event-card {
+                padding: 16px;
+                border-radius: 14px;
+                margin-bottom: 12px;
+            }
+            .event-header {
+                flex-direction: column;
+                gap: 8px;
+            }
+            .event-time {
+                font-size: 0.95rem;
+            }
+            .event-title {
+                font-size: 1.05rem;
+            }
+            .event-detail {
+                font-size: 0.85rem;
+            }
+            .event-meta-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+                padding: 10px;
+            }
+
+            /* Sidebar Widgets */
+            .widget {
+                padding: 18px;
+                border-radius: 18px;
+            }
+            .widget-title {
+                font-size: 1.1rem;
+                margin-bottom: 14px;
+            }
+            .budget-amount {
+                font-size: 1.5rem;
+            }
+
+            /* Passenger Modal */
+            .passenger-details-modal {
+                width: 100%;
+                padding: 20px 18px;
+                border-radius: 20px;
+                max-height: 90vh;
+                overflow-y: auto;
+            }
+            .passenger-modal-overlay {
+                padding: 12px;
+            }
+            .modal-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+            .modal-row {
+                font-size: 0.85rem;
+            }
+
+            /* Budget Area Filters */
+            .filter-bar {
+                flex-direction: column;
+                gap: 8px;
+            }
+            .filter-input {
+                min-width: unset;
+                width: 100%;
+            }
+            .filter-select {
+                min-width: unset;
+                width: 100%;
+            }
+
+            /* Expense Table */
+            .expense-table {
+                min-width: 600px;
+            }
+            .expense-table th,
+            .expense-table td {
+                padding: 10px 10px;
+                font-size: 0.78rem;
+                white-space: nowrap;
+            }
+            .expense-table th {
+                font-size: 0.7rem;
+            }
+
+            /* Settlement Card */
+            .settlement-card {
+                padding: 16px;
+                border-radius: 14px;
+            }
+            .settlement-title {
+                font-size: 1.05rem;
+            }
+            .settlement-item {
+                flex-wrap: wrap;
+                gap: 8px;
+                padding: 12px 14px;
+            }
+        }
+
+        /* --- Phone (≤480px) --- */
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px;
+            }
+
+            /* Header */
+            header {
+                padding: 16px 12px;
+                border-radius: 14px;
+                margin-bottom: 12px;
+            }
+            .title-area h1 {
+                font-size: 1.25rem;
+            }
+            .title-area p {
+                font-size: 0.78rem;
+                flex-wrap: wrap;
+            }
+            .header-badge {
+                font-size: 0.72rem;
+                padding: 5px 10px;
+                letter-spacing: 0.5px;
+            }
+
+            /* Route Map */
+            .route-map-card {
+                padding: 10px;
+                border-radius: 12px;
+                margin-bottom: 12px;
+            }
+            .route-title {
+                font-size: 0.85rem;
+                margin-bottom: 10px;
+            }
+            .route-svg-container {
+                -webkit-overflow-scrolling: touch;
+                padding: 5px 0;
+            }
+            .route-svg text {
+                font-size: 8px !important;
+            }
+            .route-svg text[font-size="9"] {
+                font-size: 7px !important;
+            }
+
+            /* Dashboard Grid */
+            .dashboard-grid {
+                gap: 12px;
+            }
+
+            /* Timeline Container */
+            .timeline-container {
+                padding: 12px;
+                border-radius: 14px;
+            }
+
+            /* Main Tabs */
+            .main-tabs {
+                flex-direction: column;
+                gap: 6px;
+                margin-bottom: 14px;
+            }
+            .main-tab-btn {
+                padding: 12px 14px;
+                font-size: 0.8rem;
+                border-radius: 10px;
+                flex: unset;
+                width: 100%;
+                min-height: 48px;
+            }
+
+            /* Day Tabs */
+            .tabs-header h2 {
+                font-size: 1rem !important;
+            }
+            .tabs-header p {
+                font-size: 0.75rem !important;
+            }
+            .tab-btn {
+                padding: 7px 10px;
+                min-width: 52px;
+                min-height: 48px;
+                font-size: 0.72rem;
+                border-radius: 8px;
+            }
+            .tab-btn span.day-num {
+                font-size: 0.88rem;
+            }
+
+            /* Day Overview */
+            .day-overview {
+                padding: 10px 12px;
+            }
+            .day-overview-title {
+                font-size: 0.95rem;
+            }
+            .day-overview-subtitle {
+                font-size: 0.8rem;
+            }
+
+            /* Event Cards */
+            .event-card {
+                padding: 12px;
+                border-radius: 12px;
+                margin-bottom: 10px;
+            }
+            .event-header {
+                flex-direction: column;
+                gap: 6px;
+            }
+            .event-time {
+                font-size: 0.88rem;
+            }
+            .event-badge {
+                font-size: 0.68rem;
+                padding: 3px 8px;
+            }
+            .event-title {
+                font-size: 0.95rem;
+            }
+            .event-detail {
+                font-size: 0.8rem;
+            }
+            .event-meta-grid {
+                grid-template-columns: 1fr;
+                gap: 8px;
+                padding: 8px;
+                border-radius: 8px;
+            }
+            .meta-item {
+                font-size: 0.8rem;
+            }
+            .meta-label {
+                font-size: 0.75rem;
+            }
+            .meta-value {
+                font-size: 0.82rem;
+            }
+
+            /* Sidebar Widgets */
+            .sidebar {
+                gap: 12px;
+            }
+            .widget {
+                padding: 14px;
+                border-radius: 14px;
+            }
+            .widget-title {
+                font-size: 1rem;
+                margin-bottom: 12px;
+                padding-bottom: 10px;
+            }
+            .budget-summary-card {
+                padding: 12px;
+                border-radius: 12px;
+            }
+            .budget-amount {
+                font-size: 1.3rem;
+            }
+            .budget-row {
+                font-size: 0.82rem;
+            }
+
+            /* Passenger Rows */
+            .passenger-row {
+                padding: 10px 12px;
+                border-radius: 10px;
+                flex-wrap: wrap;
+                gap: 6px;
+                min-height: 48px;
+            }
+            .pass-name {
+                font-size: 0.85rem;
+            }
+            .pass-cost {
+                font-size: 0.88rem;
+            }
+            .passenger-row:hover {
+                transform: none;
+            }
+
+            /* Passenger Modal */
+            .passenger-details-modal {
+                width: 100%;
+                padding: 16px 14px;
+                border-radius: 16px;
+                max-height: 92vh;
+            }
+            .passenger-modal-overlay {
+                padding: 8px;
+            }
+            .modal-header {
+                margin-bottom: 12px;
+                padding-bottom: 10px;
+            }
+            .modal-title {
+                font-size: 1rem;
+            }
+            .modal-close {
+                width: 32px;
+                height: 32px;
+                font-size: 1.3rem;
+            }
+            .modal-meta {
+                flex-direction: column;
+                gap: 6px;
+                padding: 8px 10px;
+                font-size: 0.78rem;
+                border-radius: 10px;
+            }
+            .modal-row {
+                font-size: 0.8rem;
+                padding: 8px 0;
+            }
+            .modal-row.total {
+                font-size: 0.95rem;
+            }
+
+            /* Budget Area */
+            .filter-bar {
+                gap: 6px;
+            }
+            .filter-input,
+            .filter-select {
+                padding: 9px 12px;
+                font-size: 0.82rem;
+                border-radius: 8px;
+                min-height: 44px;
+            }
+
+            /* Expense Table */
+            .table-container {
+                border-radius: 12px;
+                margin-bottom: 16px;
+                -webkit-overflow-scrolling: touch;
+            }
+            .table-container::after {
+                bottom: 2px;
+                right: 4px;
+                font-size: 0.65rem;
+                padding: 2px 6px;
+            }
+            .expense-table {
+                font-size: 0.72rem;
+                min-width: 520px;
+            }
+            .expense-table th,
+            .expense-table td {
+                padding: 8px 6px;
+                white-space: nowrap;
+            }
+            .expense-table th {
+                font-size: 0.65rem;
+                letter-spacing: 0;
+            }
+            .tag {
+                font-size: 0.65rem;
+                padding: 2px 6px;
+            }
+
+            /* Settlement */
+            .settlement-card {
+                padding: 12px;
+                border-radius: 12px;
+                margin-top: 16px;
+            }
+            .settlement-title {
+                font-size: 0.95rem;
+                margin-bottom: 12px;
+            }
+            .settlement-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+                padding: 10px 12px;
+                border-radius: 10px;
+            }
+            .settlement-arrow {
+                transform: rotate(90deg);
+                align-self: center;
+            }
+            .settlement-val {
+                font-size: 0.95rem;
+                align-self: flex-end;
+            }
+            .settlement-item:hover {
+                transform: none;
+            }
+
+            /* Checklist */
+            .checklist-item {
+                gap: 8px;
+                padding: 8px;
+                border-radius: 10px;
+                margin-bottom: 8px;
+            }
+            .check-content strong {
+                font-size: 0.85rem;
+            }
+            .check-content p {
+                font-size: 0.75rem;
+            }
+
+            /* Widget heading refinement */
+            .widget h3 {
+                font-size: 0.82rem !important;
+            }
+
+            /* Disable hover effects on mobile for better UX */
+            .event-card:hover {
+                transform: none;
+                border-color: rgba(255, 255, 255, 0.04);
+                background: rgba(255, 255, 255, 0.02);
+            }
+        }
+
+        /* Small phones (≤360px) */
+        @media (max-width: 360px) {
+            .container {
+                padding: 6px;
+            }
+            header {
+                padding: 12px 10px;
+                border-radius: 12px;
+            }
+            .title-area h1 {
+                font-size: 1.1rem;
+            }
+            .timeline-container {
+                padding: 10px;
+                border-radius: 12px;
+            }
+            .tab-btn {
+                min-width: 44px;
+                padding: 6px 8px;
+                font-size: 0.68rem;
+                min-height: 44px;
+            }
+            .tab-btn span.day-num {
+                font-size: 0.8rem;
+            }
+            .event-card {
+                padding: 10px;
+            }
+            .expense-table {
+                min-width: 460px;
+                font-size: 0.68rem;
+            }
+            .expense-table th,
+            .expense-table td {
+                padding: 6px 4px;
+            }
+            .budget-amount {
+                font-size: 1.15rem;
+            }
+            .passenger-details-modal {
+                padding: 12px 10px;
+            }
+            .route-svg {
+                min-width: 500px;
+                height: 55px;
+            }
+        }
+
+        /* Clickable Location Links */
+        .location-link {
+            color: var(--primary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            text-decoration: none;
+            border-bottom: 1px dashed rgba(56, 189, 248, 0.3);
+            padding: 1px 2px;
+            border-radius: 4px;
+        }
+        .location-link:hover {
+            color: #60d0ff;
+            border-bottom-color: var(--primary);
+            background: rgba(56, 189, 248, 0.1);
+            box-shadow: 0 0 12px var(--primary-glow);
+            transform: translateY(-1px);
+        }
+        .location-link .loc-icon {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+            flex-shrink: 0;
+        }
+        .map-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 99px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            margin-top: 6px;
+        }
+        .map-button:hover {
+            background: rgba(56, 189, 248, 0.2);
+            border-color: var(--primary);
+            box-shadow: 0 0 15px var(--primary-glow);
+            transform: translateY(-2px);
+        }
+        .map-button .loc-icon {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+        .route-node-clickable {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .route-node-clickable circle {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .route-node-clickable:hover circle {
+            stroke-width: 4;
+            filter: drop-shadow(0 0 8px var(--primary-glow));
+        }
+        .route-node-clickable:hover text:first-of-type {
+            fill: var(--primary) !important;
+        }
+        .directions-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            padding: 4px 10px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .directions-link:hover {
+            color: var(--primary);
+            background: rgba(56, 189, 248, 0.08);
+            border-color: rgba(56, 189, 248, 0.2);
+        }
+        .directions-link .loc-icon {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+    </style>
+    </head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <div class="title-area">
+                    <h1>Baltık Ülkeleri ve İskandinavya</h1>
+                    <p>
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        22 Temmuz – 31 Temmuz 2026 • 2 Aile (9 Kişi) Seyahat Planı
+                    </p>
+                </div>
+                <div style="display: flex; gap: 8px; align-items: center;">
+                    <button onclick="toggleTheme()" id="themeToggle" style="background: rgba(255,255,255,0.08); border: 1px solid var(--card-border); color: var(--text-muted); padding: 8px 14px; border-radius: 99px; cursor: pointer; font-size: 0.85rem; font-weight: 600; transition: all 0.3s; display: flex; align-items: center; gap: 6px; backdrop-filter: blur(4px);">
+                        <span id="themeIcon">🌙</span>
+                        <span id="themeLabel">Koyu</span>
+                    </button>
+                    <div class="header-badge">
+                        Fatih & Ekrem-Gültekin
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Route Flowchart Map -->
+        <div class="route-map-card">
+            <div class="route-title">
+                <svg class="icon" style="color: var(--primary)" viewBox="0 0 24 24"><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+                Seyahat Rota Akış Şeması
+            </div>
+            <div class="route-svg-container">
+                <svg class="route-svg" viewBox="0 0 1000 80">
+                    <!-- Lines connecting locations -->
+                    <path d="M 50 40 L 950 40" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="4"/>
+                    <path d="M 50 40 L 150 40" fill="none" stroke="var(--primary)" stroke-width="4"/>
+                    <path d="M 150 40 L 250 40" fill="none" stroke="var(--primary)" stroke-width="4"/>
+                    <path d="M 250 40 L 350 40" fill="none" stroke="var(--warning)" stroke-width="4"/>
+                    <path d="M 350 40 L 450 40" fill="none" stroke="var(--warning)" stroke-width="4"/>
+                    <path d="M 450 40 L 550 40" fill="none" stroke="var(--warning)" stroke-width="4"/>
+                    <path d="M 550 40 L 650 40" fill="none" stroke="var(--accent)" stroke-width="4"/>
+                    <path d="M 650 40 L 750 40" fill="none" stroke="var(--accent)" stroke-width="4"/>
+                    <path d="M 750 40 L 850 40" fill="none" stroke="#f43f5e" stroke-width="4"/>
+                    <path d="M 850 40 L 950 40" fill="none" stroke="var(--primary)" stroke-width="4"/>
+
+                    <!-- Nodes - All clickable -->
+                    <!-- Antalya -->
+                    <g class="route-node-clickable" onclick="openCityMap('Antalya')">
+                        <circle cx="50" cy="40" r="8" fill="#ffffff" stroke="var(--primary)" stroke-width="3"/>
+                        <text x="50" y="22" font-family="Outfit" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Antalya</text>
+                        <text x="50" y="62" font-family="Inter" font-size="9" fill="var(--text-muted)" text-anchor="middle">22 Temmuz</text>
+                    </g>
+
+                    <!-- Tallinn 1 -->
+                    <g class="route-node-clickable" onclick="openCityMap('Tallinn')">
+                        <circle cx="150" cy="40" r="8" fill="#ffffff" stroke="var(--primary)" stroke-width="3"/>
+                        <text x="150" y="22" font-family="Outfit" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Tallinn</text>
+                        <text x="150" y="62" font-family="Inter" font-size="9" fill="var(--text-muted)" text-anchor="middle">23 Temmuz</text>
+                    </g>
+
+                    <!-- Vilnius -->
+                    <g class="route-node-clickable" onclick="openCityMap('Vilnius')">
+                        <circle cx="250" cy="40" r="8" fill="#ffffff" stroke="var(--primary)" stroke-width="3"/>
+                        <text x="250" y="22" font-family="Outfit" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Vilnius</text>
+                        <text x="250" y="62" font-family="Inter" font-size="9" fill="var(--text-muted)" text-anchor="middle">23 Temmuz</text>
+                    </g>
+
+                    <!-- Kaunas -->
+                    <g class="route-node-clickable" onclick="openCityMap('Kaunas')">
+                        <circle cx="350" cy="40" r="8" fill="#ffffff" stroke="var(--warning)" stroke-width="3"/>
+                        <text x="350" y="22" font-family="Outfit" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Kaunas</text>
+                        <text x="350" y="62" font-family="Inter" font-size="9" fill="var(--text-muted)" text-anchor="middle">23-24 Tem</text>
+                    </g>
+
+                    <!-- Riga -->
+                    <g class="route-node-clickable" onclick="openCityMap('Riga')">
+                        <circle cx="450" cy="40" r="8" fill="#ffffff" stroke="var(--warning)" stroke-width="3"/>
+                        <text x="450" y="22" font-family="Outfit" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Riga</text>
+                        <text x="450" y="62" font-family="Inter" font-size="9" fill="var(--text-muted)" text-anchor="middle">24-25 Tem</text>
+                    </g>
+
+                    <!-- Tallinn 2 -->
+                    <g class="route-node-clickable" onclick="openCityMap('Tallinn')">
+                        <circle cx="550" cy="40" r="8" fill="#ffffff" stroke="var(--warning)" stroke-width="3"/>
+                        <text x="550" y="22" font-family="Outfit" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Tallinn</text>
+                        <text x="550" y="62" font-family="Inter" font-size="9" fill="var(--text-muted)" text-anchor="middle">25-26 Tem</text>
+                    </g>
+
+                    <!-- Helsinki -->
+                    <g class="route-node-clickable" onclick="openCityMap('Helsinki')">
+                        <circle cx="650" cy="40" r="8" fill="#ffffff" stroke="var(--accent)" stroke-width="3"/>
+                        <text x="650" y="22" font-family="Outfit" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Helsinki</text>
+                        <text x="650" y="62" font-family="Inter" font-size="9" fill="var(--text-muted)" text-anchor="middle">26-27 Tem</text>
+                    </g>
+
+                    <!-- Stockholm -->
+                    <g class="route-node-clickable" onclick="openCityMap('Stockholm')">
+                        <circle cx="750" cy="40" r="8" fill="#ffffff" stroke="var(--accent)" stroke-width="3"/>
+                        <text x="750" y="22" font-family="Outfit" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Stockholm</text>
+                        <text x="750" y="62" font-family="Inter" font-size="9" fill="var(--text-muted)" text-anchor="middle">28-29 Tem</text>
+                    </g>
+
+                    <!-- Oslo -->
+                    <g class="route-node-clickable" onclick="openCityMap('Oslo')">
+                        <circle cx="850" cy="40" r="8" fill="#ffffff" stroke="#f43f5e" stroke-width="3"/>
+                        <text x="850" y="22" font-family="Outfit" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Oslo</text>
+                        <text x="850" y="62" font-family="Inter" font-size="9" fill="var(--text-muted)" text-anchor="middle">29-30 Tem</text>
+                    </g>
+
+                    <!-- Izmir -->
+                    <g class="route-node-clickable" onclick="openCityMap('Izmir')">
+                        <circle cx="950" cy="40" r="8" fill="#ffffff" stroke="var(--primary)" stroke-width="3"/>
+                        <text x="950" y="22" font-family="Outfit" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">İzmir</text>
+                        <text x="950" y="62" font-family="Inter" font-size="9" fill="var(--text-muted)" text-anchor="middle">31 Temmuz</text>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Dashboard Grid Layout -->
+        <div class="dashboard-grid">
+            <!-- Left Side: Interactive Timeline -->
+            <div class="timeline-container">
+                <!-- Main Tabs for switching Itinerary vs Budget -->
+                <div class="main-tabs">
+                    <button class="main-tab-btn active" id="mainTabItinerary" onclick="toggleMainTab('itinerary')">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/></svg>
+                        Seyahat Rota Programı
+                    </button>
+                    <button class="main-tab-btn" id="mainTabBudget" onclick="toggleMainTab('budget')">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+                        Detaylı Bütçe & Borç Kapatma
+                    </button>
+                </div>
+
+                <!-- Itinerary Area wrapper -->
+                <div id="itineraryArea">
+                    <div class="tabs-header">
+                    <h2 style="font-size: 1.4rem;">🗺️ Gün Gün Seyahat Programı</h2>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Günü seçerek detayları görüntüleyin</p>
+                </div>
+                
+                <div class="tabs-scroll" id="tabsScroll">
+                    <!-- Day Tab Buttons -->
+                    <button class="tab-btn active" onclick="showDay('day22')"><span class="day-num">22</span><span>Temmuz</span></button>
+                    <button class="tab-btn" onclick="showDay('day23')"><span class="day-num">23</span><span>Temmuz</span></button>
+                    <button class="tab-btn" onclick="showDay('day24')"><span class="day-num">24</span><span>Temmuz</span></button>
+                    <button class="tab-btn" onclick="showDay('day25')"><span class="day-num">25</span><span>Temmuz</span></button>
+                    <button class="tab-btn" onclick="showDay('day26')"><span class="day-num">26</span><span>Temmuz</span></button>
+                    <button class="tab-btn" onclick="showDay('day27')"><span class="day-num">27</span><span>Temmuz</span></button>
+                    <button class="tab-btn" onclick="showDay('day28')"><span class="day-num">28</span><span>Temmuz</span></button>
+                    <button class="tab-btn" onclick="showDay('day29')"><span class="day-num">29</span><span>Temmuz</span></button>
+                    <button class="tab-btn" onclick="showDay('day30')"><span class="day-num">30</span><span>Temmuz</span></button>
+                </div>
+
+                <!-- DAY 22 -->
+                <div id="day22" class="timeline-day-panel active">
+                    <div class="day-overview">
+                        <div>
+                            <div class="day-overview-title">22 Temmuz Çarşamba: Yola Çıkış</div>
+                            <div class="day-overview-subtitle">Antalya'dan Tallinn'e gece uçuşu</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="event-badge badge-flight">1 Uçuş</span>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card flight">
+                        <div class="event-header">
+                            <div class="event-time">
+                                ✈️ 23:25 - 03:35 (+1)
+                            </div>
+                            <span class="event-badge badge-flight">SunExpress XQ496</span>
+                        </div>
+                        <div class="event-title"><span class="location-link" onclick="openMap(36.9019, 30.7917, 'Antalya Havalimanı (AYT)')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Antalya Havalimanı (AYT)</span> → <span class="location-link" onclick="openMap(59.4133, 24.8328, 'Tallinn Havalimanı (TLL)')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Tallinn Havalimanı (TLL)</span></div>
+                        <div class="event-detail">4 saat 10 dakika uçuş süresi. Bagajlılar için 20 kg hak, bagajsızlar için el bagajı.<br><span class="directions-link" onclick="openMapDirections(36.9019, 30.7917, 59.4133, 24.8328)"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Antalya → Tallinn Yol Tarifi</span></div>
+                        <div class="event-meta-grid">
+                            <div class="meta-item">
+                                <div class="meta-label">Bagajlı Rezervasyon (6 kişi)</div>
+                                <div class="meta-value meta-highlight">K42V2Q <span style="font-size: 0.75rem; color: var(--text-muted);">(Ekrem, Dilek, Fatih, Seyda, Gultekin, Derya)</span></div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Bagajsız Rezervasyon (3 kişi)</div>
+                                <div class="meta-value">W42V3T <span style="font-size: 0.75rem; color: var(--text-muted);">(Emirhan, Kaan, Kerem)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 23 -->
+                <div id="day23" class="timeline-day-panel">
+                    <div class="day-overview">
+                        <div>
+                            <div class="day-overview-title">23 Temmuz Perşembe: Tallinn → Vilnius → Kaunas</div>
+                            <div class="day-overview-subtitle">Uçuş, Vilnius Gezisi, Kaunas'a Otobüs ve Konaklama</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="event-badge badge-flight">1 Uçuş</span>
+                            <span class="event-badge badge-bus">1 Otobüs</span>
+                            <span class="event-badge badge-hotel">1 Otel</span>
+                        </div>
+                    </div>
+
+                    <div class="event-card flight">
+                        <div class="event-header">
+                            <div class="event-time">✈️ 08:05 - 09:20</div>
+                            <span class="event-badge badge-flight">Wizz Air</span>
+                        </div>
+                        <div class="event-title"><span class="location-link" onclick="openMap(59.4133, 24.8328, 'Tallinn Havalimanı (TLL)')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Tallinn Havalimanı (TLL)</span> → <span class="location-link" onclick="openMap(54.6369, 25.285, 'Vilnius Havalimanı (VNO)')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Vilnius Havalimanı (VNO)</span></div>
+                        <div class="event-detail">Tallinn havalimanına gece 03:35'te varıştan sonra layover ve Vilnius'a sabah uçuşu.<br><span class="directions-link" onclick="openMapDirections(59.4133, 24.8328, 54.6369, 25.285)"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Tallinn → Vilnius Yol Tarifi</span></div>
+                        <div class="event-meta-grid">
+                            <div class="meta-item">
+                                <div class="meta-label">Rezervasyon / PNR Kodları</div>
+                                <div class="meta-value">JPP35A (5 kişi) • IL6NYC (3 kişi) • GR8P4X (Gültekin)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card bus">
+                        <div class="event-header">
+                            <div class="event-time">🚌 17:15 - 18:50</div>
+                            <span class="event-badge badge-bus">TOKS Neo (Kautra)</span>
+                        </div>
+                        <div class="event-title"><span class="location-link" onclick="openMap(54.6703, 25.2778, 'Vilnius Otogarı')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Vilnius Otogarı</span> → <span class="location-link" onclick="openMap(54.8965, 23.92, 'Kaunas Otogarı')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Kaunas Otogarı</span></div>
+                        <div class="event-detail">Vilnius'u gezmek için (Old Town, Gediminas Kulesi vb.) saat 09:30-16:00 arası serbest zaman. Ardından Kaunas'a geçiş.<br><span class="directions-link" onclick="openDirectionsWithTransit('Vilnius Otogarı', 'Kaunas Otogarı')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Vilnius → Kaunas Yol Tarifi (Tüm Ulaşım)</span></div>
+                        <div class="event-meta-grid">
+                            <div class="meta-item">
+                                <div class="meta-label">Bilet Kodları</div>
+                                <div class="meta-value">3-910 5 / 391005 1 <span style="font-size: 0.8rem; color: var(--warning);">• Kişi başı €10,00</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card hotel">
+                        <div class="event-header">
+                            <div class="event-time">🏨 Giriş: 15:00+ (23 Tem) - Çıkış: 11:00 (24 Tem)</div>
+                            <span class="event-badge badge-hotel">Hotel Metropolis ★★★</span>
+                        </div>
+                        <div class="event-title">Hotel Metropolis - Kaunas</div>
+                        <div class="event-detail">Adres: <span class="location-link" onclick="openMap(54.8985, 23.9036, 'S. Daukanto g. 21, LT-44249 Kaunas, Litvanya')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> S. Daukanto g. 21, LT-44249 Kaunas, Litvanya</span> • <span class="location-link" onclick="searchHotelOnGoogleMaps('Hotel Metropolis', 'Kaunas')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Hotel Metropolis</span> • Tel: +370 37 205992 • Kahvaltı Dahil.</div>
+                        <div class="event-meta-grid">
+                            <div class="meta-item">
+                                <div class="meta-label">Booking Onay</div>
+                                <div class="meta-value meta-highlight">5359.337.306 / PIN: 6008</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Oda Dağılımı (3 Oda)</div>
+                                <div class="meta-value">
+                                    Çift Kişilik (Gültekin+Derya)<br>
+                                    Dört Kişilik (Ekrem+Dilek+Emirhan+Kerem)<br>
+                                    Üç Kişilik (Fatih+Seyda+Kaan)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 24 -->
+                <div id="day24" class="timeline-day-panel">
+                    <div class="day-overview">
+                        <div>
+                            <div class="day-overview-title">24 Temmuz Cuma: Kaunas → Riga</div>
+                            <div class="day-overview-subtitle">Kaunas gezisi ve Letonya'nın Başkenti Riga'ya geçiş</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="event-badge badge-bus">1 Otobüs</span>
+                            <span class="event-badge badge-hotel">1 Otel</span>
+                        </div>
+                    </div>
+
+                    <div class="event-card bus">
+                        <div class="event-header">
+                            <div class="event-time">🚌 18:05 - 21:45</div>
+                            <span class="event-badge badge-bus">FlixBus N1230</span>
+                        </div>
+                        <div class="event-title"><span class="location-link" onclick="openMap(54.8965, 23.92, 'Kaunas Otogarı')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Kaunas Otogarı</span> → <span class="location-link" onclick="openMap(56.9465, 24.115, 'Riga Otogarı')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Riga Otogarı</span></div>
+                        <div class="event-detail">Gündüz Kaunas Kalesi ve Özgürlük Bulvarı gezisi. Akşam otobüs ile Riga'ya seyahat.<br><span class="directions-link" onclick="openDirectionsWithTransit('Kaunas Otogarı', 'Riga Otogarı')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Kaunas → Riga Yol Tarifi (Tüm Ulaşım)</span></div>
+                        <div class="event-meta-grid">
+                            <div class="meta-item">
+                                <div class="meta-label">PNR / Rezervasyon</div>
+                                <div class="meta-value meta-highlight">336 576 8121</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Koltuk Yerleşimi</div>
+                                <div class="meta-value">4A, 4B, 11C, 12A, 12B, 12C, 12D, 20A, 20B (Koltuklar rezervedir)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card hotel">
+                        <div class="event-header">
+                            <div class="event-time">🏨 24 Temmuz - 25 Temmuz (1 Gece)</div>
+                            <span class="event-badge badge-hotel">Riga Otelleri</span>
+                        </div>
+                        <div class="event-title">Riga Konaklama (Tüm Gruplar)</div>
+                        <div class="event-detail">Riga merkezinde konaklama detayları. Gültekin ailesi için Three Crowns Residents, Özdemir ailesi için tahmini bütçe eklenmiştir.</div>
+                        <div class="event-meta-grid">
+                            <div class="meta-item">
+                                <div class="meta-label">Ekrem Ailesi (City Inn Riga) <span class="map-button" onclick="searchHotelOnGoogleMaps('City in Riga Apartment', 'Riga')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Haritada Göster</span></div>
+                                <div class="meta-value meta-highlight">Ekrem, Dilek, Emirhan • Ücret: €100.92</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Gültekin Ailesi (Three Crowns Residents)</div>
+                                <div class="meta-value meta-highlight">Gültekin, Derya, Kaan, Kerem • Ücret: €103.60</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Fatih Ailesi (Tahmini)</div>
+                                <div class="meta-value">Fatih, Şeyda • Ücret: €80.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 25 -->
+                <div id="day25" class="timeline-day-panel">
+                    <div class="day-overview">
+                        <div>
+                            <div class="day-overview-title">25 Temmuz Cumartesi: Riga → Tallinn</div>
+                            <div class="day-overview-subtitle">Riga Gezisi ve Estonya'nın Başkenti Tallinn'e Dönüş</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="event-badge badge-bus">1 Otobüs</span>
+                            <span class="event-badge badge-hotel">2 Otel</span>
+                        </div>
+                    </div>
+
+                    <div class="event-card bus">
+                        <div class="event-header">
+                            <div class="event-time">🚌 17:30 - 21:50</div>
+                            <span class="event-badge badge-bus">FlixBus N1301</span>
+                        </div>
+                        <div class="event-title"><span class="location-link" onclick="openMap(56.9465, 24.115, 'Riga Otogarı')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Riga Otogarı</span> → <span class="location-link" onclick="openMap(59.4369, 24.7714, 'Tallinn Otogarı')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Tallinn Otogarı</span></div>
+                        <div class="event-detail"><strong>⚠️ ÖNEMLİ UYARI:</strong> İstasyon tadilatı nedeniyle biniş peronu kanalın karşı tarafındadır. Peron 2.<br><span class="directions-link" onclick="openDirectionsWithTransit('Riga Otogarı', 'Tallinn Otogarı')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Riga → Tallinn Yol Tarifi (Tüm Ulaşım)</span></div>
+                        <div class="event-meta-grid">
+                            <div class="meta-item">
+                                <div class="meta-label">PNR / Rezervasyon</div>
+                                <div class="meta-value meta-highlight">336 577 1635</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Koltuk Ataması</div>
+                                <div class="meta-value">Otomatik atama (Koltuklar biniş kartında basılacaktır)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card hotel">
+                        <div class="event-header">
+                            <div class="event-time">🏨 25 Temmuz - 26 Temmuz (1 Gece)</div>
+                            <span class="event-badge badge-hotel">Tallinn Otelleri</span>
+                        </div>
+                        <div class="event-title">St. Barbara Hotel & Three Crowns Residents</div>
+                        <div class="event-detail">Ekrem Ailesi St. Barbara'da, Kadayıfçı Ailesi Three Crowns Residents'da konaklayacak.</div>
+                        <div class="event-meta-grid">
+                            <div class="meta-item">
+                                <div class="meta-label">St. Barbara (Ekrem, Dilek, Emirhan, Fatih, Seyda) <span class="map-button" onclick="searchHotelOnGoogleMaps('St. Barbara Hotel', 'Tallinn')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Haritada Göster</span></div>
+                                <div class="meta-value">2 Oda (Çift ve Üç Kişilik) • Tutar: €183,31</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Three Crowns (Gültekin, Derya, Kaan, Kerem) <span class="map-button" onclick="searchHotelOnGoogleMaps('Three Crowns Residents', 'Tallinn')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Haritada Göster</span></div>
+                                <div class="meta-value">1 Aile Odası • Tutar: €103,60 (Misnamed PDF)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 26 -->
+                <div id="day26" class="timeline-day-panel">
+                    <div class="day-overview">
+                        <div>
+                            <div class="day-overview-title">26 Temmuz Pazar: Tallinn → Helsinki</div>
+                            <div class="day-overview-subtitle">Tallinn Ortaçağ Şehir Gezisi ve Feribotla Finlandiya'ya Geçiş</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="event-badge badge-ferry">1 Feribot</span>
+                            <span class="event-badge badge-hotel">3 Otel</span>
+                        </div>
+                    </div>
+
+                    <div class="event-card ferry">
+                        <div class="event-header">
+                            <div class="event-time">⛴️ 18:30 - 21:00</div>
+                            <span class="event-badge badge-ferry">Eckerö Line (M/s Finlandia)</span>
+                        </div>
+                        <div class="event-title"><span class="location-link" onclick="openMap(59.4439, 24.7678, 'Tallinn Terminal A')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Tallinn Terminal A</span> → <span class="location-link" onclick="openMap(60.16, 24.92, 'Helsinki West Harbour T2')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Helsinki West Harbour T2</span></div>
+                        <div class="event-detail">2.5 saat keyifli deniz yolculuğu. Check-in binişten 2 saat önce (16:30) başlar, kalkışa 45 dk kala (17:45) kapanır.<br><span class="directions-link" onclick="openMapDirections(59.4439, 24.7678, 60.16, 24.92)"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Tallinn Terminal A → Helsinki West Harbour Yol Tarifi</span></div>
+                        <div class="event-meta-grid">
+                            <div class="meta-item">
+                                <div class="meta-label">Kadayıfçı Rezervasyon (4 kişi)</div>
+                                <div class="meta-value">LP3968503 • Tutar: €102,00</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Tekatli / Özdemir Rezervasyon (5 kişi)</div>
+                                <div class="meta-value">LP3326605 • Tutar: €165,00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card hotel">
+                        <div class="event-header">
+                            <div class="event-time">🏨 26 Temmuz - 27 Temmuz (1 Gece)</div>
+                            <span class="event-badge badge-hotel">Scandic Park Helsinki</span>
+                        </div>
+                        <div class="event-title">Scandic Park Helsinki</div>
+                        <div class="event-detail">Adres: <span class="location-link" onclick="openMap(60.1699, 24.9384, 'Mannerheimintie 46, 00260 Helsinki, Finlandiya')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Mannerheimintie 46, 00260 Helsinki, Finlandiya</span> • <span class="location-link" onclick="searchHotelOnGoogleMaps('Scandic Park Helsinki', 'Helsinki')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Scandic Park Helsinki</span> • Tümüyle onaylı ve bütçelendirilmiştir.</div>
+                        <div class="event-meta-grid">
+                            <div class="meta-item">
+                                <div class="meta-label">Ekrem Ailesi (3 kişi)</div>
+                                <div class="meta-value">Tutar: €120.60</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Gültekin Ailesi (4 kişi)</div>
+                                <div class="meta-value">Tutar: €127.80</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Fatih Ailesi (2 kişi - Çözüldü!)</div>
+                                <div class="meta-value meta-highlight">5426.170.267 • Tutar: €99.90</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 27 -->
+                <div id="day27" class="timeline-day-panel">
+                    <div class="day-overview">
+                        <div>
+                            <div class="day-overview-title">27 Temmuz Pazartesi: Helsinki → Stockholm</div>
+                            <div class="day-overview-subtitle">Helsinki gezisi ve Viking Line Gemisiyle Gece Yolculuğu</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="event-badge badge-ferry">1 Feribot</span>
+                        </div>
+                    </div>
+
+                    <div class="event-card ferry">
+                        <div class="event-header">
+                            <div class="event-time">⛴️ 18:10 - 28 Tem 10:00 (Sabah)</div>
+                            <span class="event-badge badge-ferry">Viking Line (Overnight Cruise)</span>
+                        </div>
+                        <div class="event-title"><span class="location-link" onclick="openMap(60.1675, 24.9667, 'Helsinki Katajanokka Terminal')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Helsinki Katajanokka Terminal</span> → <span class="location-link" onclick="openMap(59.3167, 18.0833, 'Stockholm Stadsgården')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Stockholm Stadsgården</span></div>
+                        <div class="event-detail">Gemi içi kamaralarda konaklamalı 16 saatlik unutulmaz bir seyahat. Check-in kalkıştan 30 dakika önce kapanır.<br><span class="directions-link" onclick="openMapDirections(60.1675, 24.9667, 59.3167, 18.0833)"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Helsinki Katajanokka → Stockholm Stadsgården Yol Tarifi</span></div>
+                        <div class="event-meta-grid">
+                            <div class="meta-item">
+                                <div class="meta-label">Kamara Rezervasyonları</div>
+                                <div class="meta-value">
+                                    Ekrem Ailesi (3 kişi): €256.00<br>
+                                    Gültekin Ailesi (4 kişi): €176.00<br>
+                                    Fatih Ailesi (2 kişi): €127.00
+                                </div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Toplam Feribot Bütçesi</div>
+                                <div class="meta-value meta-highlight">€559,00 EUR</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 28 -->
+                <div id="day28" class="timeline-day-panel">
+                    <div class="day-overview">
+                        <div>
+                            <div class="day-overview-title">28 Temmuz Salı: Stockholm</div>
+                            <div class="day-overview-subtitle">Stockholm'e varış, Gamla Stan ve Vasa Müzesi Gezisi</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="event-badge badge-hotel">1 Otel</span>
+                        </div>
+                    </div>
+
+                    <div class="event-card hotel">
+                        <div class="event-header">
+                            <div class="event-time">🏨 28 Temmuz - 29 Temmuz (1 Gece)</div>
+                            <span class="event-badge badge-hotel">Stockholm Otelleri</span>
+                        </div>
+                        <div class="event-title">Stockholm Konaklama (Tüm Gruplar)</div>
+                        <div class="event-detail">Stockholm merkezinde konaklama detayları. Belgelere göre Urban Deli ve Wasa Park otelleri bütçelenmiştir.</div>
+                        <div class="event-meta-grid">
+                            <div class="meta-item">
+                                <div class="meta-label">Ekrem Ailesi (Wasa Park Hotel) <span class="map-button" onclick="searchHotelOnGoogleMaps('Wasa Park Hotel', 'Stockholm')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Haritada Göster</span></div>
+                                <div class="meta-value meta-highlight">Ekrem, Dilek, Emirhan • Ücret: €137.00</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Gültekin Ailesi (Hotel With Urban Deli) <span class="map-button" onclick="searchHotelOnGoogleMaps('Hotel With Urban Deli', 'Stockholm')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Haritada Göster</span></div>
+                                <div class="meta-value meta-highlight">Gültekin, Derya, Kaan, Kerem • Ücret: 8.652,03 TL</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Fatih Ailesi (Hotel With Urban Deli) <span class="map-button" onclick="searchHotelOnGoogleMaps('Hotel With Urban Deli', 'Stockholm')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Haritada Göster</span></div>
+                                <div class="meta-value meta-highlight">Fatih, Şeyda • Ücret: 1.129,95 SEK</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 29 -->
+                <div id="day29" class="timeline-day-panel">
+                    <div class="day-overview">
+                        <div>
+                            <div class="day-overview-title">29 Temmuz Çarşamba: Stockholm → Oslo</div>
+                            <div class="day-overview-subtitle">Hızlı Tren İle İsveç'ten Norveç'e Geçiş</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="event-badge badge-train">1 Tren</span>
+                            <span class="event-badge badge-hotel">3 Otel</span>
+                        </div>
+                    </div>
+
+                    <div class="event-card train">
+                        <div class="event-header">
+                            <div class="event-time">🚄 18:19 - 00:14 (+1)</div>
+                            <span class="event-badge badge-train">SJ 3000 (Tren 645 - Vagon 2)</span>
+                        </div>
+                        <div class="event-title"><span class="location-link" onclick="openMap(59.33, 18.0567, 'Stockholm Central')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Stockholm Central</span> → <span class="location-link" onclick="openMap(59.9109, 10.7522, 'Oslo Central (Oslo S)')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Oslo Central (Oslo S)</span></div>
+                        <div class="event-detail"><strong>⚠️ PASAPORT ZORUNLULUĞU:</strong> Trende kimlik ve pasaport kontrolleri yapılmaktadır. Hazır bulundurun.<br><span class="directions-link" onclick="openMapDirections(59.33, 18.0567, 59.9109, 10.7522)"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Stockholm Central → Oslo Central Yol Tarifi</span></div>
+                        <div class="event-meta-grid">
+                            <div class="meta-item">
+                                <div class="meta-label">Grup 1 PNR (Ekrem, Dilek, Emirhan, Fatih, Seyda)</div>
+                                <div class="meta-value">W52GZEAJ • Koltuklar: 60, 63, 64, 65, 66 • Ücret: 2.275 SEK</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Grup 2 PNR (Gültekin, Derya, Kerem, Kaan)</div>
+                                <div class="meta-value meta-highlight">WWM4LSCU • Koltuklar: 69, 70, 73, 74 • Ücret: ~1.820 SEK <span style="font-size: 0.75rem; color: var(--text-muted);">(Tahmini)</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card hotel">
+                        <div class="event-header">
+                            <div class="event-time">🏨 29 Temmuz - 30 Temmuz (1 Gece)</div>
+                            <span class="event-badge badge-hotel">Oslo Konaklama</span>
+                        </div>
+                        <div class="event-title">Radisson RED Oslo & City Sea Lux Oslo</div>
+                        <div class="event-detail">Oslo'ya gece 00:14'te varışta doğrudan otellere yerleşme.</div>
+                        <div class="event-meta-grid">
+                            <div class="meta-item">
+                                <div class="meta-label">Radisson RED Oslo (Ekrem & Fatih) <span class="map-button" onclick="searchHotelOnGoogleMaps('Radisson RED Oslo', 'Oslo')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Haritada Göster</span></div>
+                                <div class="meta-value">3 Kişilik Oda (€224.00) • 2 Kişilik Oda (€161.00)</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">City Sea Lux Oslo (Gültekin) <span class="map-button" onclick="searchHotelOnGoogleMaps('City Sea Lux Oslo', 'Oslo')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Haritada Göster</span></div>
+                                <div class="meta-value">Aile Odası (€183.00)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 30 -->
+                <div id="day30" class="timeline-day-panel">
+                    <div class="day-overview">
+                        <div>
+                            <div class="day-overview-title">30 Temmuz Perşembe: Oslo Gezisi & Dönüş</div>
+                            <div class="day-overview-subtitle">Oslo'da Tüm Gün Gezi ve İzmir'e Dönüş Uçuşu</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="event-badge badge-flight">1 Uçuş</span>
+                        </div>
+                    </div>
+
+                    <div class="event-card flight">
+                        <div class="event-header">
+                            <div class="event-time">✈️ 23:40 - 04:40 (+1)</div>
+                            <span class="event-badge badge-flight">SunExpress XQ953</span>
+                        </div>
+                        <div class="event-title"><span class="location-link" onclick="openMap(60.1939, 11.1004, 'Oslo Havalimanı (OSL)')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Oslo Havalimanı (OSL)</span> → <span class="location-link" onclick="openMap(38.2924, 27.1568, 'İzmir Adnan Menderes (ADB)')"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> İzmir Adnan Menderes (ADB)</span></div>
+                        <div class="event-detail">Seyahatin son günü. Vigeland Parkı ve Opera Binası gezisi sonrası 21:40'ta havalimanında buluşma. 31 Temmuz sabahı İzmir'e varış ve seyahat sonu.<br><span class="directions-link" onclick="openMapDirections(60.1939, 11.1004, 38.2924, 27.1568)"><svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Oslo → İzmir Yol Tarifi</span></div>
+                        <div class="event-meta-grid">
+                            <div class="meta-item">
+                                <div class="meta-label">Bagajlı Rezervasyon (6 kişi)</div>
+                                <div class="meta-value meta-highlight">VK2C3L <span style="font-size: 0.75rem; color: var(--text-muted);">(Ekrem, Dilek, Fatih, Seyda, Gultekin, Derya)</span></div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Bagajsız Rezervasyon (3 kişi)</div>
+                                <div class="meta-value">DK48NC (Emirhan, Kerem) • JAZ2GE (Kaan)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div> <!-- End of itineraryArea -->
+
+                <!-- Budget Area Section -->
+                <div id="budgetArea" style="display: none;">
+                    <div class="tabs-header">
+                        <h2 style="font-size: 1.4rem;">📊 Detaylı Harcama Tablosu & Borç Kapatma</h2>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Tüm seyahat harcamaları ve kimin kime ne kadar borçlu olduğu</p>
+                    </div>
+
+                    <!-- Filters -->
+                    <div class="filter-bar">
+                        <input type="text" id="budgetSearch" placeholder="Harcama kalemi ara..." class="filter-input" oninput="filterBudget()">
+                        <select id="budgetCategoryFilter" class="filter-select" onchange="filterBudget()">
+                            <option value="">Tüm Kategoriler</option>
+                            <option value="Uçak">Uçak</option>
+                            <option value="Otobüs">Otobüs</option>
+                            <option value="Feribot">Feribot</option>
+                            <option value="Tren">Tren</option>
+                            <option value="Konaklama">Konaklama</option>
+                            <option value="Transfer">Transfer</option>
+                        </select>
+                        <select id="budgetPayerFilter" class="filter-select" onchange="filterBudget()">
+                            <option value="">Tüm Ödeyenler</option>
+                            <option value="EKREM">Ekrem</option>
+                            <option value="GÜLTEKİN">Gültekin</option>
+                            <option value="FATİH">Fatih</option>
+                            <option value="SPLIT">Parçalı</option>
+                        </select>
+                    </div>
+
+                    <!-- Expenses Table -->
+                    <div class="table-container">
+                        <table class="expense-table">
+                            <thead>
+                                <tr>
+                                    <th>Kategori</th>
+                                    <th>Kalem / Açıklama</th>
+                                    <th>Tutar</th>
+                                    <th>Ödeyen</th>
+                                    <th style="color: #10b981;">Ekrem Payı</th>
+                                    <th style="color: #ec4899;">Gültekin Payı</th>
+                                    <th style="color: #38bdf8;">Fatih Payı</th>
+                                </tr>
+                            </thead>
+                            <tbody id="expenseTableBody">
+                                <!-- Will be loaded dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Settlement (Net Borç Kapatma) Card -->
+                    <div class="settlement-card">
+                        <div class="settlement-title">
+                            <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+                            Borç Temizleme & Hesap Kapatma Raporu
+                        </div>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 15px;">Bakiyeleri sıfırlamak için yapılması gereken en verimli para transferleri:</p>
+                        <div class="settlement-list" id="settlementList">
+                            <!-- Injected dynamically -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Side: Sidebar Widgets -->
+            <div class="sidebar">
+                <!-- Budget Widget -->
+                <div class="widget">
+                    <div class="widget-title">
+                        <svg class="icon" style="color: var(--primary)" viewBox="0 0 24 24"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                        Bütçe Özeti ve Hesaplamalar
+                    </div>
+                    
+                    <div class="budget-summary-card">
+                        <div class="budget-row">
+                            <span>Genel Toplam Bütçesi</span>
+                            <span>TRY Karşılığı</span>
+                        </div>
+                        <div class="budget-amount" id="totalTry">
+                            ₺271.175,51
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 15px;">
+                        <div class="budget-row">
+                            <span style="color: var(--text-muted)">Türk Lirası (Biletler & Otel)</span>
+                            <span class="budget-val-try">132.889,11 TL</span>
+                        </div>
+                        <div class="budget-row">
+                            <span style="color: var(--text-muted)">Euro Cinsinden (Otel & Feribot)</span>
+                            <span class="budget-val-try" style="color: var(--success)">€3.199,12</span>
+                        </div>
+                        <div class="budget-row">
+                            <span style="color: var(--text-muted)">İsveç Kronu (Tren & Otel)</span>
+                            <span class="budget-val-try" style="color: var(--accent)">5.224,95 SEK</span>
+                        </div>
+                    </div>
+
+                                        <h3 style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 10px; text-transform: uppercase;">Aile / Grup Bazlı Paylar</h3>
+                    <div class="passenger-list">
+                        <!-- Kadayifci -->
+                        <div class="passenger-row" onclick="showFamilyDetails('gultekin')">
+                            <span class="pass-name"><span class="pass-name-dot dot-kadayifci"></span>Gültekin & Ailesi (4 kişi)</span>
+                            <span class="pass-cost" style="color: var(--kadayifci);">₺118.506,42</span>
+                        </div>
+                        
+                        <!-- Tekatli -->
+                        <div class="passenger-row" onclick="showFamilyDetails('ekrem')">
+                            <span class="pass-name"><span class="pass-name-dot dot-tekatli"></span>Ekrem & Ailesi (3 kişi)</span>
+                            <span class="pass-cost" style="color: var(--tekatli);">₺119.423,85</span>
+                        </div>
+ 
+                        <!-- Ozdemir -->
+                        <div class="passenger-row" onclick="showFamilyDetails('fatih')">
+                            <span class="pass-name"><span class="pass-name-dot dot-ozdemir"></span>Fatih & Ailesi (2 kişi)</span>
+                            <span class="pass-cost" style="color: var(--ozdemir);">₺86.135,64</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Travel Checklist Widget -->
+                <div class="widget">
+                    <div class="widget-title">
+                        <svg class="icon" style="color: var(--success)" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        Önemli Kontroller & Belgeler
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <div class="check-box">✓</div>
+                        <div class="check-content">
+                            <strong>Pasaport ve Schengen Vizesi</strong>
+                            <p>Sınır kapılarında ve tren yolculuklarında pasaport ibrazı yasal zorunluluktur. Her an kolayca erişilebilir olmalıdır.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <div class="check-box warn">!</div>
+                        <div class="check-content">
+                            <strong>İskandinavya'da Kart Kullanımı</strong>
+                            <p>İsveç, Norveç ve Finlandiya'da nakit para neredeyse hiç kullanılmaz. Temassız ödeme özellikli kredi kartları kritik önem taşır.</p>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item">
+                        <div class="check-box">✓</div>
+                        <div class="check-content">
+                            <strong>Tren Pasaport Kontrolü</strong>
+                            <p>Stockholm - Oslo hızlı treninde (SJ 3000) pasaport kontrolü zorunludur. Yanınızda bulundurun.</p>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item">
+                        <div class="check-box">✓</div>
+                        <div class="check-content">
+                            <strong>Gemi ve Feribot Girişleri</strong>
+                            <p>Tallinn-Helsinki ve Helsinki-Stockholm feribot biniş kartları terminallerde basılacaktır. PNR kodlarını hazır tutun.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Passenger Details Overlay Modal (outside container) -->
+    <div class="passenger-modal-overlay" id="passModalOverlay" onclick="overlayClick(event)">
+        <div class="passenger-details-modal" id="passDetailsModal">
+            <div class="modal-header">
+                <span class="modal-title" id="modalName">Passenger Name</span>
+                <span class="modal-close" onclick="closePassengerDetails()">&times;</span>
+            </div>
+            <div class="modal-meta">
+                <span>Grup: <strong id="modalGroup">Group</strong></span>
+                <span>Bagaj: <strong id="modalBag">Bagajlı</strong></span>
+            </div>
+            <div class="modal-row">
+                <span>✈️ Antalya-Tallinn & Oslo-İzmir Uçuşu</span>
+                <span id="modalFlights">₺0.00</span>
+            </div>
+            <div class="modal-row">
+                <span>✈️ Vilnius-Kaunas & Wizz Air Uçuşu</span>
+                <span id="modalWizz">₺0.00</span>
+            </div>
+            <div class="modal-row">
+                <span>🚌 Otobüsler & Feribotlar (Viking Line dahil)</span>
+                <span id="modalBuses">₺0.00</span>
+            </div>
+            <div class="modal-row">
+                <span>🚄 Stockholm-Oslo Treni (SJ)</span>
+                <span id="modalTrain">₺0.00</span>
+            </div>
+            <div class="modal-row">
+                <span>🏨 Kaunas, Riga & Tallinn Konaklama</span>
+                <span id="modalBalticHotels">₺0.00</span>
+            </div>
+            <div class="modal-row">
+                <span>🏨 Helsinki Konaklama (Scandic)</span>
+                <span id="modalHelsinkiHotel">₺0.00</span>
+            </div>
+            <div class="modal-row">
+                <span>🏨 Stockholm & Oslo Konaklama</span>
+                <span id="modalScandicHotels">₺0.00</span>
+            </div>
+            <div class="modal-row total">
+                <span>💰 TOPLAM BORÇ</span>
+                <span id="modalTotal">₺0.00</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // BUDGET_DATA_START
+        const budgetData = {
+        "rates": {
+                "EUR_TL": 53.05735,
+                "SEK_TL": 4.83245,
+                "NOK_TL": 4.7687,
+                "BUFFER": 0.1,
+                "YOLCU_SAYISI": 9.0,
+                "GUN_SAYISI": 10.0,
+                "GECIKME_BUFFER_DK": 60.0
+        },
+        "costs": [
+                {
+                        "no": 1,
+                        "date": "2026-07-22",
+                        "category": "Uçak",
+                        "item": "Antalya → Tallinn bagajlı",
+                        "provider": "SunExpress XQ496",
+                        "currency": "TL",
+                        "amount": 39213.9,
+                        "amount_try": 39213.9,
+                        "ekrem_share": 13071.3,
+                        "gultekin_share": 13071.3,
+                        "fatih_share": 13071.3,
+                        "ekrem_share_try": 13071.3,
+                        "gultekin_share_try": 13071.3,
+                        "fatih_share_try": 13071.3,
+                        "payer": "FATİH",
+                        "row_paid": {
+                                "EKREM": 0.0,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 39213.9
+                        },
+                        "covered_count": 6,
+                        "status": "Onaylı",
+                        "risk": "Düşük",
+                        "note": "6 yetişkin için 1×20 kg"
+                },
+                {
+                        "no": 2,
+                        "date": "2026-07-22",
+                        "category": "Uçak",
+                        "item": "Antalya → Tallinn bagajsız",
+                        "provider": "SunExpress XQ496",
+                        "currency": "TL",
+                        "amount": 18143.16,
+                        "amount_try": 18143.16,
+                        "ekrem_share": 6047.72,
+                        "gultekin_share": 12095.44,
+                        "fatih_share": 0.0,
+                        "ekrem_share_try": 6047.72,
+                        "gultekin_share_try": 12095.44,
+                        "fatih_share_try": 0.0,
+                        "payer": "FATİH",
+                        "row_paid": {
+                                "EKREM": 0.0,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 18143.16
+                        },
+                        "covered_count": 3,
+                        "status": "Onaylı",
+                        "risk": "Orta",
+                        "note": "3 kişi yalnız el bagajı"
+                },
+                {
+                        "no": 3,
+                        "date": "2026-07-23",
+                        "category": "Uçak",
+                        "item": "Tallinn → Vilnius",
+                        "provider": "Wizz Air",
+                        "currency": "EUR",
+                        "amount": 350.71,
+                        "amount_try": 18607.7432185,
+                        "ekrem_share": 118.57,
+                        "gultekin_share": 128.56,
+                        "fatih_share": 103.58,
+                        "ekrem_share_try": 6291.009989499999,
+                        "gultekin_share_try": 6821.052916,
+                        "fatih_share_try": 5495.680313,
+                        "payer": "GÜLTEKİN",
+                        "row_paid": {
+                                "EKREM": 0.0,
+                                "GÜLTEKİN": 18607.7432185,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 9,
+                        "status": "Onaylı",
+                        "risk": "Orta",
+                        "note": "Bagaj hakkı faturadan ayrıca kontrol edilmeli"
+                },
+                {
+                        "no": 4,
+                        "date": "2026-07-23",
+                        "category": "Otobüs",
+                        "item": "Vilnius → Kaunas",
+                        "provider": "TOKS Neo / Kautra",
+                        "currency": "EUR",
+                        "amount": 90.0,
+                        "amount_try": 4775.1615,
+                        "ekrem_share": 30.0,
+                        "gultekin_share": 40.0,
+                        "fatih_share": 20.0,
+                        "ekrem_share_try": 1591.7205,
+                        "gultekin_share_try": 2122.294,
+                        "fatih_share_try": 1061.147,
+                        "payer": "EKREM",
+                        "row_paid": {
+                                "EKREM": 4775.1615,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 9,
+                        "status": "Onaylı",
+                        "risk": "Düşük",
+                        "note": "17:15–18:50"
+                },
+                {
+                        "no": 5,
+                        "date": "2026-07-24",
+                        "category": "Otobüs",
+                        "item": "Kaunas → Riga",
+                        "provider": "FlixBus N1230",
+                        "currency": "TL",
+                        "amount": 7731.0,
+                        "amount_try": 7731.0,
+                        "ekrem_share": 2577.0,
+                        "gultekin_share": 3436.0,
+                        "fatih_share": 1718.0,
+                        "ekrem_share_try": 2577.0,
+                        "gultekin_share_try": 3436.0,
+                        "fatih_share_try": 1718.0,
+                        "payer": "EKREM",
+                        "row_paid": {
+                                "EKREM": 7731.0,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 9,
+                        "status": "Onaylı",
+                        "risk": "Düşük",
+                        "note": "18:05–21:45"
+                },
+                {
+                        "no": 6,
+                        "date": "2026-07-25",
+                        "category": "Otobüs",
+                        "item": "Riga → Tallinn",
+                        "provider": "FlixBus N1301",
+                        "currency": "TL",
+                        "amount": 6561.0,
+                        "amount_try": 6561.0,
+                        "ekrem_share": 2187.0,
+                        "gultekin_share": 1458.0,
+                        "fatih_share": 2916.0,
+                        "ekrem_share_try": 2187.0,
+                        "gultekin_share_try": 1458.0,
+                        "fatih_share_try": 2916.0,
+                        "payer": "EKREM",
+                        "row_paid": {
+                                "EKREM": 6561.0,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 9,
+                        "status": "Onaylı",
+                        "risk": "Düşük",
+                        "note": "17:30–21:50; koltuklar atanmamış"
+                },
+                {
+                        "no": 7,
+                        "date": "2026-07-26",
+                        "category": "Feribot",
+                        "item": "Tallinn → Helsinki",
+                        "provider": "Eckerö Line M/s Finlandia",
+                        "currency": "EUR",
+                        "amount": 267.0,
+                        "amount_try": 14166.31245,
+                        "ekrem_share": 165.0,
+                        "gultekin_share": 102.0,
+                        "fatih_share": 0.0,
+                        "ekrem_share_try": 8754.46275,
+                        "gultekin_share_try": 5411.8497,
+                        "fatih_share_try": 0.0,
+                        "payer": "SPLIT",
+                        "row_paid": {
+                                "EKREM": 8754.46275,
+                                "GÜLTEKİN": 5411.8497,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 9,
+                        "status": "Onaylı",
+                        "risk": "Düşük",
+                        "note": "Terminal A → West Harbour T2"
+                },
+                {
+                        "no": 8,
+                        "date": "2026-07-27",
+                        "category": "Feribot",
+                        "item": "Helsinki → Stockholm",
+                        "provider": "Viking Line",
+                        "currency": "EUR",
+                        "amount": 559.0,
+                        "amount_try": 29659.05865,
+                        "ekrem_share": 256.0,
+                        "gultekin_share": 176.0,
+                        "fatih_share": 127.0,
+                        "ekrem_share_try": 13582.6816,
+                        "gultekin_share_try": 9338.0936,
+                        "fatih_share_try": 6738.28345,
+                        "payer": "SPLIT",
+                        "row_paid": {
+                                "EKREM": 13582.6816,
+                                "GÜLTEKİN": 9338.0936,
+                                "FATİH": 6738.28345
+                        },
+                        "covered_count": 9,
+                        "status": "Onaylı",
+                        "risk": "Düşük",
+                        "note": "Gece feribotu; kabin dahil varsayıldı"
+                },
+                {
+                        "no": 9,
+                        "date": "2026-07-29",
+                        "category": "Tren",
+                        "item": "Stockholm → Oslo",
+                        "provider": "SJ 3000 Tren 645",
+                        "currency": "SEK",
+                        "amount": 3321.0,
+                        "amount_try": 16048.566449999998,
+                        "ekrem_share": 1365.0,
+                        "gultekin_share": 1046.0,
+                        "fatih_share": 910.0,
+                        "ekrem_share_try": 6596.29425,
+                        "gultekin_share_try": 5054.7427,
+                        "fatih_share_try": 4397.5295,
+                        "payer": "EKREM",
+                        "row_paid": {
+                                "EKREM": 16048.566449999998,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 5,
+                        "status": "Onaylı",
+                        "risk": "Orta",
+                        "note": "Tekatli/Ozdemir 5 kişi tutarı var; Kadayifci 4 kişi tutarı eksik biletleri var"
+                },
+                {
+                        "no": 10,
+                        "date": "2026-07-23",
+                        "category": "Konaklama",
+                        "item": "Kaunas / Hotel Metropolis",
+                        "provider": "Hotel Metropolis",
+                        "currency": "EUR",
+                        "amount": 307.68,
+                        "amount_try": 16324.685448,
+                        "ekrem_share": 106.0,
+                        "gultekin_share": 125.0,
+                        "fatih_share": 76.68,
+                        "ekrem_share_try": 5624.0791,
+                        "gultekin_share_try": 6632.16875,
+                        "fatih_share_try": 4068.4375980000004,
+                        "payer": "GÜLTEKİN",
+                        "row_paid": {
+                                "EKREM": 0.0,
+                                "GÜLTEKİN": 16324.685448,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 9,
+                        "status": "Onaylı",
+                        "risk": "Düşük",
+                        "note": "3 oda, kahvaltı dahil"
+                },
+                {
+                        "no": 19,
+                        "date": "2026-07-24",
+                        "category": "Konaklama",
+                        "item": "Riga / Grey Stones Riga",
+                        "provider": "Grey Stone Suits Riga",
+                        "currency": "EUR",
+                        "amount": 183.15,
+                        "amount_try": 9717.4536525,
+                        "ekrem_share": 0.0,
+                        "gultekin_share": 93.15,
+                        "fatih_share": 90.0,
+                        "ekrem_share_try": 0.0,
+                        "gultekin_share_try": 4942.2921525,
+                        "fatih_share_try": 4775.1615,
+                        "payer": "GÜLTEKİN",
+                        "row_paid": {
+                                "EKREM": 0.0,
+                                "GÜLTEKİN": 9717.4536525,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 5,
+                        "status": "Onaylı",
+                        "risk": "Düşük",
+                        "note": "kadayifci ve Fatih aileleri "
+                },
+                {
+                        "no": 20,
+                        "date": "2026-07-24",
+                        "category": "Konaklama",
+                        "item": "Riga / City in Riga Apartment",
+                        "provider": "City in Riga Apartment",
+                        "currency": "EUR",
+                        "amount": 100.92,
+                        "amount_try": 5354.547762,
+                        "ekrem_share": 100.92,
+                        "gultekin_share": 0.0,
+                        "fatih_share": 0.0,
+                        "ekrem_share_try": 5354.547762,
+                        "gultekin_share_try": 0.0,
+                        "fatih_share_try": 0.0,
+                        "payer": "EKREM",
+                        "row_paid": {
+                                "EKREM": 5354.547762,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 3,
+                        "status": "Onaylı",
+                        "risk": "Düşük",
+                        "note": "Tekatlı Ailesi"
+                },
+                {
+                        "no": 11,
+                        "date": "2026-07-25",
+                        "category": "Konaklama",
+                        "item": "Tallinn / Three Crowns ",
+                        "provider": "Three Crowns Tallinn",
+                        "currency": "EUR",
+                        "amount": 103.6,
+                        "amount_try": 5496.741459999999,
+                        "ekrem_share": 0.0,
+                        "gultekin_share": 103.6,
+                        "fatih_share": 0.0,
+                        "ekrem_share_try": 0.0,
+                        "gultekin_share_try": 5496.741459999999,
+                        "fatih_share_try": 0.0,
+                        "payer": "GÜLTEKİN",
+                        "row_paid": {
+                                "EKREM": 0.0,
+                                "GÜLTEKİN": 5496.741459999999,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 4,
+                        "status": "Onaylı",
+                        "risk": "Düşük",
+                        "note": "kadayifci  ailesi kahvaltı dahil"
+                },
+                {
+                        "no": 12,
+                        "date": "2026-07-25",
+                        "category": "Konaklama",
+                        "item": "Tallinn / St. Barbara Hotel",
+                        "provider": "St. Barbara Hotel",
+                        "currency": "EUR",
+                        "amount": 183.31,
+                        "amount_try": 9725.9428285,
+                        "ekrem_share": 87.91,
+                        "gultekin_share": 0.0,
+                        "fatih_share": 95.4,
+                        "ekrem_share_try": 4664.271638499999,
+                        "gultekin_share_try": 0.0,
+                        "fatih_share_try": 5061.67119,
+                        "payer": "SPLIT",
+                        "row_paid": {
+                                "EKREM": 4664.271638499999,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 5061.67119
+                        },
+                        "covered_count": 5,
+                        "status": "Onaylı",
+                        "risk": "Düşük",
+                        "note": "Fatih ve Tekatlı ailesi çift ve 3 kişilik 2 oda"
+                },
+                {
+                        "no": 13,
+                        "date": "2026-07-26",
+                        "category": "Konaklama",
+                        "item": "Helsinki / Scandic Park",
+                        "provider": "Scandic Park Helsinki",
+                        "currency": "EUR",
+                        "amount": 348.29999999999995,
+                        "amount_try": 18479.875004999998,
+                        "ekrem_share": 120.6,
+                        "gultekin_share": 127.8,
+                        "fatih_share": 99.9,
+                        "ekrem_share_try": 6398.71641,
+                        "gultekin_share_try": 6780.72933,
+                        "fatih_share_try": 5300.429265000001,
+                        "payer": "EKREM",
+                        "row_paid": {
+                                "EKREM": 18479.875004999998,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 9,
+                        "status": "Onaylı",
+                        "risk": "Düşük",
+                        "note": "Ekrem 3 kişi + Kadayifci 4 kişi; Fatih/Seyda 2 kişi"
+                },
+                {
+                        "no": 14,
+                        "date": "2026-07-28",
+                        "category": "Konaklama",
+                        "item": "Stockholm / Wasa Park",
+                        "provider": "Wasa Park Hotel",
+                        "currency": "EUR",
+                        "amount": 137.0,
+                        "amount_try": 7268.85695,
+                        "ekrem_share": 137.0,
+                        "gultekin_share": 0.0,
+                        "fatih_share": 0.0,
+                        "ekrem_share_try": 7268.85695,
+                        "gultekin_share_try": 0.0,
+                        "fatih_share_try": 0.0,
+                        "payer": "EKREM",
+                        "row_paid": {
+                                "EKREM": 7268.85695,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 3,
+                        "status": "Onaylı",
+                        "risk": "Düşük",
+                        "note": "Tekatlı ailesi 3 kişi"
+                },
+                {
+                        "no": 15,
+                        "date": "2026-07-28",
+                        "category": "Konaklama",
+                        "item": "Stockholm /Hotel With Urban Deli",
+                        "provider": "Hotel With Urban Deli",
+                        "currency": "SEK",
+                        "amount": 1129.95,
+                        "amount_try": 5460.4268775,
+                        "ekrem_share": 0.0,
+                        "gultekin_share": 0.0,
+                        "fatih_share": 1129.95,
+                        "ekrem_share_try": 0.0,
+                        "gultekin_share_try": 0.0,
+                        "fatih_share_try": 5460.4268775,
+                        "payer": "FATİH",
+                        "row_paid": {
+                                "EKREM": 0.0,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 5460.4268775
+                        },
+                        "covered_count": 2,
+                        "status": "Onaylı",
+                        "risk": "Düşük",
+                        "note": "Fatih özdemir 2 kişi"
+                },
+                {
+                        "no": 15,
+                        "date": "2026-07-28",
+                        "category": "Konaklama",
+                        "item": "Stockholm /Hotel With Urban Deli",
+                        "provider": "Hotel With Urban Deli",
+                        "currency": "TL",
+                        "amount": 8652.03,
+                        "amount_try": 8652.03,
+                        "ekrem_share": 0.0,
+                        "gultekin_share": 8652.03,
+                        "fatih_share": 0.0,
+                        "ekrem_share_try": 0.0,
+                        "gultekin_share_try": 8652.03,
+                        "fatih_share_try": 0.0,
+                        "payer": "GÜLTEKİN",
+                        "row_paid": {
+                                "EKREM": 0.0,
+                                "GÜLTEKİN": 8652.03,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 4,
+                        "status": "Onaylı",
+                        "risk": "Düşük",
+                        "note": "Gültekin KADAYİFCİ 1 king boy oda hotels.com"
+                },
+                {
+                        "no": 15,
+                        "date": "2026-07-29",
+                        "category": "Konaklama",
+                        "item": "Oslo otelleri",
+                        "provider": "Radisson RED ",
+                        "currency": "EUR",
+                        "amount": 385.0,
+                        "amount_try": 20427.07975,
+                        "ekrem_share": 224.0,
+                        "gultekin_share": 0.0,
+                        "fatih_share": 161.0,
+                        "ekrem_share_try": 11884.8464,
+                        "gultekin_share_try": 0.0,
+                        "fatih_share_try": 8542.23335,
+                        "payer": "EKREM",
+                        "row_paid": {
+                                "EKREM": 20427.07975,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 5,
+                        "status": "Onaylı",
+                        "risk": "Orta",
+                        "note": "EKREM VE FATİH AİLELERİ - 00:14 varış için geç check-in onayı alınmalı"
+                },
+                {
+                        "no": 15,
+                        "date": "2026-07-29",
+                        "category": "Konaklama",
+                        "item": "Oslo otelleri",
+                        "provider": "City Sea Lux",
+                        "currency": "NOK",
+                        "amount": 2026.62,
+                        "amount_try": 9664.342794,
+                        "ekrem_share": 0.0,
+                        "gultekin_share": 2026.62,
+                        "fatih_share": 0.0,
+                        "ekrem_share_try": 0.0,
+                        "gultekin_share_try": 9664.342794,
+                        "fatih_share_try": 0.0,
+                        "payer": "GÜLTEKİN",
+                        "row_paid": {
+                                "EKREM": 0.0,
+                                "GÜLTEKİN": 9664.342794,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 4,
+                        "status": "Onaylı",
+                        "risk": "Orta",
+                        "note": "GÜLTEKİN 00:14 varış için geç check-in onayı alınmalı"
+                },
+                {
+                        "no": 16,
+                        "date": "2026-07-30",
+                        "category": "Uçak",
+                        "item": "Oslo → İzmir bagajlı",
+                        "provider": "SunExpress XQ953",
+                        "currency": "TL",
+                        "amount": 35758.68,
+                        "amount_try": 35758.68,
+                        "ekrem_share": 11919.56,
+                        "gultekin_share": 11919.56,
+                        "fatih_share": 11919.56,
+                        "ekrem_share_try": 11919.56,
+                        "gultekin_share_try": 11919.56,
+                        "fatih_share_try": 11919.56,
+                        "payer": "FATİH",
+                        "row_paid": {
+                                "EKREM": 0.0,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 35758.68
+                        },
+                        "covered_count": 6,
+                        "status": "Onaylı",
+                        "risk": "Düşük",
+                        "note": "6 kişi 1×20 kg"
+                },
+                {
+                        "no": 17,
+                        "date": "2026-07-30",
+                        "category": "Uçak",
+                        "item": "Oslo → İzmir bagajsız",
+                        "provider": "SunExpress XQ953",
+                        "currency": "TL",
+                        "amount": 16829.34,
+                        "amount_try": 16829.34,
+                        "ekrem_share": 5609.78,
+                        "gultekin_share": 5609.78,
+                        "fatih_share": 5609.78,
+                        "ekrem_share_try": 5609.78,
+                        "gultekin_share_try": 5609.78,
+                        "fatih_share_try": 5609.78,
+                        "payer": "FATİH",
+                        "row_paid": {
+                                "EKREM": 0.0,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 16829.34
+                        },
+                        "covered_count": 3,
+                        "status": "Onaylı",
+                        "risk": "Orta",
+                        "note": "3 kişi yalnız el bagajı"
+                },
+                {
+                        "no": 23,
+                        "date": "2026-07-31",
+                        "category": "Transfer",
+                        "item": "İzmir → Afyon dönüş",
+                        "provider": "Belirlenecek",
+                        "currency": "TL",
+                        "amount": 0.0,
+                        "amount_try": 0.0,
+                        "ekrem_share": 0.0,
+                        "gultekin_share": 0.0,
+                        "fatih_share": 0.0,
+                        "ekrem_share_try": 0.0,
+                        "gultekin_share_try": 0.0,
+                        "fatih_share_try": 0.0,
+                        "payer": "SPLIT",
+                        "row_paid": {
+                                "EKREM": 0.0,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 9,
+                        "status": "Eksik",
+                        "risk": "Yüksek",
+                        "note": "Tatil Antalya çıkışlı ama dönüş İzmir'de bitiyor"
+                },
+                {
+                        "no": 24,
+                        "date": "Genel",
+                        "category": "Transfer",
+                        "item": "Şehir içi transferler",
+                        "provider": "Taksi / toplu taşıma",
+                        "currency": "EUR",
+                        "amount": 0.0,
+                        "amount_try": 0.0,
+                        "ekrem_share": 0.0,
+                        "gultekin_share": 0.0,
+                        "fatih_share": 0.0,
+                        "ekrem_share_try": 0.0,
+                        "gultekin_share_try": 0.0,
+                        "fatih_share_try": 0.0,
+                        "payer": "SPLIT",
+                        "row_paid": {
+                                "EKREM": 0.0,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 9,
+                        "status": "Eksik",
+                        "risk": "Orta",
+                        "note": "Havalimanı, liman, otogar, otel transferleri bütçeye eklenmeli"
+                },
+                {
+                        "no": 25,
+                        "date": "Genel",
+                        "category": "Yeme-İçme",
+                        "item": "Günlük yemek bütçesi",
+                        "provider": "Restoran / market",
+                        "currency": "EUR",
+                        "amount": 0.0,
+                        "amount_try": 0.0,
+                        "ekrem_share": 0.0,
+                        "gultekin_share": 0.0,
+                        "fatih_share": 0.0,
+                        "ekrem_share_try": 0.0,
+                        "gultekin_share_try": 0.0,
+                        "fatih_share_try": 0.0,
+                        "payer": "SPLIT",
+                        "row_paid": {
+                                "EKREM": 0.0,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 9,
+                        "status": "Eksik",
+                        "risk": "Orta",
+                        "note": "Günlük kişi başı bütçe belirlenmeli"
+                },
+                {
+                        "no": 26,
+                        "date": "Genel",
+                        "category": "Aktivite",
+                        "item": "Müze ve giriş ücretleri",
+                        "provider": "Müzeler",
+                        "currency": "EUR",
+                        "amount": 0.0,
+                        "amount_try": 0.0,
+                        "ekrem_share": 0.0,
+                        "gultekin_share": 0.0,
+                        "fatih_share": 0.0,
+                        "ekrem_share_try": 0.0,
+                        "gultekin_share_try": 0.0,
+                        "fatih_share_try": 0.0,
+                        "payer": "SPLIT",
+                        "row_paid": {
+                                "EKREM": 0.0,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 9,
+                        "status": "Eksik",
+                        "risk": "Orta",
+                        "note": "Vasa, müzeler, şehir kartları vb."
+                },
+                {
+                        "no": 27,
+                        "date": "Genel",
+                        "category": "Evrak",
+                        "item": "Vize / sigorta / hizmet bedeli",
+                        "provider": "Belirlenecek",
+                        "currency": "EUR",
+                        "amount": 0.0,
+                        "amount_try": 0.0,
+                        "ekrem_share": 0.0,
+                        "gultekin_share": 0.0,
+                        "fatih_share": 0.0,
+                        "ekrem_share_try": 0.0,
+                        "gultekin_share_try": 0.0,
+                        "fatih_share_try": 0.0,
+                        "payer": "SPLIT",
+                        "row_paid": {
+                                "EKREM": 0.0,
+                                "GÜLTEKİN": 0.0,
+                                "FATİH": 0.0
+                        },
+                        "covered_count": 9,
+                        "status": "Eksik",
+                        "risk": "Orta",
+                        "note": "Schengen vizesi, seyahat sigortası, aracı hizmet bedelleri"
+                }
+        ],
+        "summary": {
+                "EKREM": {
+                        "paid": 113647.5034055,
+                        "share": 119423.84734999998,
+                        "color": "#10b981"
+                },
+                "GÜLTEKİN": {
+                        "paid": 83212.939873,
+                        "share": 118506.4174025,
+                        "color": "#ec4899"
+                },
+                "FATİH": {
+                        "paid": 127205.46151749999,
+                        "share": 86135.6400435,
+                        "color": "#38bdf8"
+                }
+        }
+};
+        // BUDGET_DATA_END
+
+        // Tab display management
+        function showDay(dayId) {
+            // Hide all panels
+            const panels = document.querySelectorAll('.timeline-day-panel');
+            panels.forEach(panel => panel.classList.remove('active'));
+            
+            // Remove active style from all tabs
+            const tabs = document.querySelectorAll('.tab-btn');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected panel
+            document.getElementById(dayId).classList.add('active');
+            
+            // Add active style to clicked tab
+            event.currentTarget.classList.add('active');
+        }
+
+        // Passenger cost database based on the Excel calculations (exchange rate EUR = 38, SEK = 3.2)
+        const passDb = {
+            gultekin: {
+                name: "Suleyman Gultekin Kadayifci",
+                group: "Kadayifci",
+                bag: "Bagajlı (20 kg)",
+                flights: "₺12.495,43",
+                wizz: "₺1.860,78",
+                buses: "₺4.229,00",
+                train: "₺1.456,00",
+                baltic: "₺3.425,32",
+                helsinki: "₺1.214,10",
+                oslo: "₺3.901,51",
+                total: "₺28.582,13"
+            },
+            derya: {
+                name: "Derya Mukaddes Kadayifci",
+                group: "Kadayifci",
+                bag: "Bagajlı (20 kg)",
+                flights: "₺12.495,43",
+                wizz: "₺1.860,78",
+                buses: "₺4.229,00",
+                train: "₺1.456,00",
+                baltic: "₺3.425,32",
+                helsinki: "₺1.214,10",
+                oslo: "₺3.901,51",
+                total: "₺28.582,13"
+            },
+            kaan: {
+                name: "Kaan Kadayifci (Çocuk)",
+                group: "Kadayifci",
+                bag: "Bagajsız (El bagajı)",
+                flights: "₺11.657,50",
+                wizz: "₺1.860,78",
+                buses: "₺4.229,00",
+                train: "₺1.456,00",
+                baltic: "₺3.311,07",
+                helsinki: "₺1.214,10",
+                oslo: "₺3.901,51",
+                total: "₺27.629,95"
+            },
+            kerem: {
+                name: "Kerem Kadayifci (Çocuk)",
+                group: "Kadayifci",
+                bag: "Bagajsız (El bagajı)",
+                flights: "₺11.657,50",
+                wizz: "₺1.860,78",
+                buses: "₺4.229,00",
+                train: "₺1.456,00",
+                baltic: "₺3.155,90",
+                helsinki: "₺1.214,10",
+                oslo: "₺3.901,51",
+                total: "₺27.474,78"
+            },
+            ekrem: {
+                name: "Ekrem Tekatli",
+                group: "Tekatli & Ozdemir",
+                bag: "Bagajlı (20 kg)",
+                flights: "₺12.495,43",
+                wizz: "₺1.860,78",
+                buses: "₺6.084,67",
+                train: "₺1.456,00",
+                baltic: "₺4.136,11",
+                helsinki: "₺1.527,60",
+                oslo: "₺4.572,67",
+                total: "₺32.133,25"
+            },
+            dilek: {
+                name: "Dilek Tekatli",
+                group: "Tekatli & Ozdemir",
+                bag: "Bagajlı (20 kg)",
+                flights: "₺12.495,43",
+                wizz: "₺1.860,78",
+                buses: "₺6.084,67",
+                train: "₺1.456,00",
+                baltic: "₺4.136,11",
+                helsinki: "₺1.527,60",
+                oslo: "₺4.572,67",
+                total: "₺32.133,25"
+            },
+            emirhan: {
+                name: "Emirhan Tekatli",
+                group: "Tekatli & Ozdemir",
+                bag: "Bagajsız (El bagajı)",
+                flights: "₺11.657,50",
+                wizz: "₺1.860,78",
+                buses: "₺6.084,67",
+                train: "₺1.456,00",
+                baltic: "₺3.674,22",
+                helsinki: "₺1.527,60",
+                oslo: "₺4.572,67",
+                total: "₺30.833,43"
+            },
+            fatih: {
+                name: "Fatih Ozdemir",
+                group: "Tekatli & Ozdemir",
+                bag: "Bagajlı (20 kg)",
+                flights: "₺12.495,43",
+                wizz: "₺1.860,78",
+                buses: "₺5.255,00",
+                train: "₺1.456,00",
+                baltic: "₺4.071,07",
+                helsinki: "₺3.796,20",
+                oslo: "₺4.866,92",
+                total: "₺33.801,39"
+            },
+            seyda: {
+                name: "Seyda Ozdemir",
+                group: "Tekatli & Ozdemir",
+                bag: "Bagajlı (20 kg)",
+                flights: "₺12.495,43",
+                wizz: "₺1.860,78",
+                buses: "₺5.255,00",
+                train: "₺1.456,00",
+                baltic: "₺4.071,07",
+                helsinki: "₺0,00",
+                oslo: "₺4.866,92",
+                total: "₺30.005,19"
+            }
+        };
+
+
+        // --- Main Tab Switching ---
+        function toggleMainTab(tab) {
+            const itineraryArea = document.getElementById('itineraryArea');
+            const budgetArea = document.getElementById('budgetArea');
+            const tabItinerary = document.getElementById('mainTabItinerary');
+            const tabBudget = document.getElementById('mainTabBudget');
+            
+            if (tab === 'itinerary') {
+                itineraryArea.style.display = 'block';
+                budgetArea.style.display = 'none';
+                tabItinerary.classList.add('active');
+                tabBudget.classList.remove('active');
+            } else if (tab === 'budget') {
+                itineraryArea.style.display = 'none';
+                budgetArea.style.display = 'block';
+                tabItinerary.classList.remove('active');
+                tabBudget.classList.add('active');
+                renderBudget();
+            }
+        }
+
+        // --- Render Budget Table & Settlements Dynamically ---
+        function renderBudget() {
+            if (!budgetData || !budgetData.costs) {
+                console.log("No budgetData available to render.");
+                return;
+            }
+            
+            // Render total budget amount
+            const totalTryEl = document.getElementById('totalTry');
+            if (totalTryEl && budgetData.summary) {
+                const total = Object.values(budgetData.summary).reduce((acc, p) => acc + p.share, 0);
+                totalTryEl.textContent = '₺' + total.toLocaleString('tr-TR', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+            }
+            
+            filterBudget();
+            renderSettlements();
+        }
+
+        function filterBudget() {
+            const searchQuery = document.getElementById('budgetSearch').value.toLowerCase();
+            const categoryFilter = document.getElementById('budgetCategoryFilter').value;
+            const payerFilter = document.getElementById('budgetPayerFilter').value;
+            const tbody = document.getElementById('expenseTableBody');
+            
+            if (!tbody) return;
+            tbody.innerHTML = '';
+            
+            const filteredCosts = budgetData.costs.filter(c => {
+                const matchesSearch = c.item.toLowerCase().includes(searchQuery) || (c.provider && c.provider.toLowerCase().includes(searchQuery));
+                const matchesCategory = categoryFilter === '' || c.category === categoryFilter;
+                const matchesPayer = payerFilter === '' || c.payer === payerFilter;
+                return matchesSearch && matchesCategory && matchesPayer;
+            });
+            
+            filteredCosts.forEach(c => {
+                const tr = document.createElement('tr');
+                
+                // Format values
+                const amountFormatted = c.amount.toLocaleString('tr-TR') + ' ' + c.currency;
+                const amountTryFormatted = '₺' + c.amount_try.toLocaleString('tr-TR', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+                
+                const ekremShare = c.ekrem_share > 0 ? (c.ekrem_share.toLocaleString('tr-TR') + ' ' + c.currency) : '-';
+                const gultekinShare = c.gultekin_share > 0 ? (c.gultekin_share.toLocaleString('tr-TR') + ' ' + c.currency) : '-';
+                const fatihShare = c.fatih_share > 0 ? (c.fatih_share.toLocaleString('tr-TR') + ' ' + c.currency) : '-';
+                
+                           // Determine payer color based on who paid the expense
+                let payerColor = '';
+                if (c.payer === 'EKREM') {
+                    payerColor = 'ekrem';
+                } else if (c.payer === 'GÜLTEKİN') {
+                    payerColor = 'gültekin';
+                } else if (c.payer === 'FATİH') {
+                    payerColor = 'fatih';
+                } else if (c.payer === 'SPLIT') {
+                    // For SPLIT: check if only one person actually paid
+                    const payersCount = (c.row_paid.EKREM > 0.01 ? 1 : 0) + (c.row_paid.GÜLTEKİN > 0.01 ? 1 : 0) + (c.row_paid.FATİH > 0.01 ? 1 : 0);
+                    if (payersCount === 1) {
+                        if (c.row_paid.EKREM > 0) payerColor = 'ekrem';
+                        else if (c.row_paid.GÜLTEKİN > 0) payerColor = 'gültekin';
+                        else if (c.row_paid.FATİH > 0) payerColor = 'fatih';
+                    }
+                }
+                
+                let ekremClass = '';
+                let gultekinClass = '';
+                let fatihClass = '';
+                if (payerColor === 'ekrem') {
+                    gultekinClass = 'cell-debt-colored ekrem';
+                    fatihClass = 'cell-debt-colored ekrem';
+                } else if (payerColor === 'gültekin') {
+                    ekremClass = 'cell-debt-colored gültekin';
+                    fatihClass = 'cell-debt-colored gültekin';
+                } else if (payerColor === 'fatih') {
+                    ekremClass = 'cell-debt-colored fatih';
+                    gultekinClass = 'cell-debt-colored fatih';
+                }
+                
+                tr.innerHTML = `
+                    <td><span class="event-badge badge-${getCategoryBadgeClass(c.category)}">${c.category}</span></td>
+                    <td>
+                        <strong>${c.item}</strong>
+                        <div style="font-size: 0.75rem; color: var(--text-muted);">${c.provider || ''} ${c.note ? '• ' + c.note : ''}</div>
+                    </td>
+                    <td>
+                        <div>${amountFormatted}</div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted);">${amountTryFormatted}</div>
+                    </td>
+                    <td><span class="tag tag-payer ${c.payer.toLowerCase()}">${c.payer}</span></td>
+                    <td class="${ekremClass}">${ekremShare}</td>
+                    <td class="${gultekinClass}">${gultekinShare}</td>
+                    <td class="${fatihClass}">${fatihShare}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+        
+        function getCategoryBadgeClass(cat) {
+            if (cat === 'Uçak') return 'flight';
+            if (cat === 'Otobüs') return 'bus';
+            if (cat === 'Feribot') return 'ferry';
+            if (cat === 'Tren') return 'train';
+            if (cat === 'Konaklama') return 'hotel';
+            return 'bus';
+        }
+        
+        function getPayerClassByPaidShare(shareName, costItem) {
+            if (costItem.item.includes('Tallinn → Helsinki') || costItem.item.includes('Helsinki → Stockholm')) {
+                if (shareName === 'EKREM') return 'gültekin';
+                if (shareName === 'GÜLTEKİN') return 'fatih';
+            }
+            if (costItem.item.includes('St. Barbara Hotel')) {
+                if (shareName === 'EKREM') return 'gültekin';
+            }
+            return '';
+        }
+
+        function renderSettlements() {
+            const list = document.getElementById('settlementList');
+            if (!list || !budgetData.costs || !budgetData.summary) return;
+            list.innerHTML = '';
+            
+            const summary = budgetData.summary;
+            const people = ['EKREM', 'GÜLTEKİN', 'FATİH'];
+            const debtMap = Object.fromEntries(
+                people.map((person) => [person, Object.fromEntries(people.map((other) => [other, 0]))])
+            );
+            
+            budgetData.costs.forEach((cost) => {
+                const rowPaid = cost.row_paid || {};
+                const payers = people.filter((person) => (rowPaid[person] || 0) > 0.01);
+                const shares = {
+                    EKREM: cost.ekrem_share_try || 0,
+                    GÜLTEKİN: cost.gultekin_share_try || 0,
+                    FATİH: cost.fatih_share_try || 0
+                };
+
+                if (payers.length === 1) {
+                    const payer = payers[0];
+                    people.forEach((person) => {
+                        if (person !== payer) {
+                            debtMap[person][payer] += shares[person] || 0;
+                        }
+                    });
+                } else if (payers.length > 1) {
+                    const totalPaid = payers.reduce((sum, person) => sum + (rowPaid[person] || 0), 0);
+                    payers.forEach((payer) => {
+                        const ratio = totalPaid > 0 ? (rowPaid[payer] || 0) / totalPaid : 0;
+                        people.forEach((person) => {
+                            if (person !== payer) {
+                                debtMap[person][payer] += (shares[person] || 0) * ratio;
+                            }
+                        });
+                    });
+                }
+            });
+            
+            const settlements = [];
+            for (let i = 0; i < people.length; i++) {
+                for (let j = 0; j < people.length; j++) {
+                    if (i === j) continue;
+                    const from = people[i];
+                    const to = people[j];
+                    const netAmount = debtMap[from][to] - debtMap[to][from];
+                    if (netAmount > 0.01) {
+                        settlements.push({ from, to, amount: netAmount });
+                    }
+                }
+            }
+            
+            if (settlements.length === 0) {
+                list.innerHTML = `<div class="settlement-item" style="justify-content: center; color: var(--success); font-weight: 600;"> Tüm hesaplar kapatılmıştır, borç bulunmamaktadır.</div>`;
+                return;
+            }
+            
+            settlements.forEach((s) => {
+                const item = document.createElement('div');
+                item.className = 'settlement-item';
+                
+                const fromColor = summary[s.from].color;
+                const toColor = summary[s.to].color;
+                
+                item.innerHTML = `
+                    <div style="display:flex; align-items:center;">
+                        <span class="settlement-party" style="color: ${fromColor};">${s.from}</span>
+                        <span class="settlement-arrow">➔</span>
+                        <span class="settlement-party" style="color: ${toColor};">${s.to}</span>
+                    </div>
+                    <div class="settlement-val">₺${s.amount.toLocaleString('tr-TR', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</div>
+                `;
+                list.appendChild(item);
+            });
+        }
+
+        // Overwrite showPassengerDetails to show family details modal since columns are family-based
+        function showFamilyDetails(familyKey) {
+            if (!budgetData || !budgetData.summary) return;
+            
+            let keyUpper = '';
+            if (familyKey === 'gultekin') keyUpper = 'GÜLTEKİN';
+            else if (familyKey === 'fatih') keyUpper = 'FATİH';
+            else if (familyKey === 'ekrem') keyUpper = 'EKREM';
+            else keyUpper = familyKey.toUpperCase();
+            
+            const summary = budgetData.summary[keyUpper];
+            if (!summary) return;
+            
+            // Set active states on sidebar rows
+            const rows = document.querySelectorAll('.passenger-row');
+            rows.forEach(row => row.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+
+            // Set modal values
+            document.getElementById('modalName').textContent = keyUpper + ' AİLESİ & GRUBU';
+            document.getElementById('modalGroup').textContent = keyUpper === 'GÜLTEKİN' ? 'Kadayifci Ailesi' : 'Tekatli & Ozdemir Ailesi';
+            document.getElementById('modalBag').textContent = keyUpper === 'GÜLTEKİN' ? '4 Kişi (2 bagajlı, 2 bagajsız)' : (keyUpper === 'EKREM' ? '3 Kişi (2 bagajlı, 1 bagajsız)' : '2 Kişi (2 bagajlı)');
+            
+            // Filter costs for this family
+            let flights = 0, wizz = 0, buses = 0, train = 0, balticHotels = 0, helsinkiHotel = 0, osloHotels = 0;
+            
+            budgetData.costs.forEach(c => {
+                const shareKey = familyKey === 'ekrem' ? 'ekrem_share_try' : (familyKey === 'gultekin' ? 'gultekin_share_try' : 'fatih_share_try');
+                const val = c[shareKey];
+                
+                if (val > 0) {
+                    if (c.category === 'Uçak') {
+                        if (c.item.includes('Tallinn → Vilnius') || c.item.includes('Wizz')) wizz += val;
+                        else flights += val;
+                    } else if (c.category === 'Otobüs' || c.category === 'Feribot') {
+                        buses += val;
+                    } else if (c.category === 'Tren') {
+                        train += val;
+                    } else if (c.category === 'Konaklama') {
+                        if (c.item.includes('Kaunas') || c.item.includes('Riga') || c.item.includes('Tallinn')) balticHotels += val;
+                        else if (c.item.includes('Helsinki') || c.item.includes('Scandic')) helsinkiHotel += val;
+                        else osloHotels += val;
+                    }
+                }
+            });
+            
+            document.getElementById('modalFlights').textContent = '₺' + flights.toLocaleString('tr-TR', {minimumFractionDigits: 2});
+            document.getElementById('modalWizz').textContent = '₺' + wizz.toLocaleString('tr-TR', {minimumFractionDigits: 2});
+            document.getElementById('modalBuses').textContent = '₺' + buses.toLocaleString('tr-TR', {minimumFractionDigits: 2});
+            document.getElementById('modalTrain').textContent = '₺' + train.toLocaleString('tr-TR', {minimumFractionDigits: 2});
+            document.getElementById('modalBalticHotels').textContent = '₺' + balticHotels.toLocaleString('tr-TR', {minimumFractionDigits: 2});
+            document.getElementById('modalHelsinkiHotel').textContent = '₺' + helsinkiHotel.toLocaleString('tr-TR', {minimumFractionDigits: 2});
+            document.getElementById('modalScandicHotels').textContent = '₺' + osloHotels.toLocaleString('tr-TR', {minimumFractionDigits: 2});
+            
+            // Total Share (Borç Payı)
+            document.getElementById('modalTotal').textContent = '₺' + summary.share.toLocaleString('tr-TR', {minimumFractionDigits: 2});
+            
+            // Change header style depending on family
+            const modalHeader = document.querySelector('.passenger-details-modal');
+            modalHeader.style.borderColor = summary.color;
+            
+            // Show overlay modal
+            document.getElementById('passModalOverlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Modal display logic
+        function showPassengerDetails(passengerKey) {
+            const passenger = passDb[passengerKey];
+            if (!passenger) return;
+            
+            const rows = document.querySelectorAll('.passenger-row');
+            rows.forEach(row => row.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+
+            document.getElementById('modalName').textContent = passenger.name;
+            document.getElementById('modalGroup').textContent = passenger.group;
+            document.getElementById('modalBag').textContent = passenger.bag;
+            
+            document.getElementById('modalFlights').textContent = passenger.flights;
+            document.getElementById('modalWizz').textContent = passenger.wizz;
+            document.getElementById('modalBuses').textContent = passenger.buses;
+            document.getElementById('modalTrain').textContent = passenger.train;
+            document.getElementById('modalBalticHotels').textContent = passenger.baltic;
+            document.getElementById('modalHelsinkiHotel').textContent = passenger.helsinki;
+            document.getElementById('modalScandicHotels').textContent = passenger.oslo;
+            document.getElementById('modalTotal').textContent = passenger.total;
+            
+            document.getElementById('passModalOverlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePassengerDetails() {
+            document.getElementById('passModalOverlay').classList.remove('active');
+            document.body.style.overflow = '';
+            const rows = document.querySelectorAll('.passenger-row');
+            rows.forEach(row => row.classList.remove('active'));
+        }
+
+        function overlayClick(e) {
+            if (e.target === document.getElementById('passModalOverlay')) {
+                closePassengerDetails();
+            }
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closePassengerDetails();
+            }
+        });
+
+        // ============ THEME TOGGLE ============
+        function toggleTheme() {
+            const body = document.body;
+            const toggle = document.getElementById('themeToggle');
+            const icon = document.getElementById('themeIcon');
+            const label = document.getElementById('themeLabel');
+            
+            body.classList.toggle('light-mode');
+            const isLight = body.classList.contains('light-mode');
+            
+            localStorage.setItem('tatilPlaniTheme', isLight ? 'light' : 'dark');
+            
+            icon.textContent = isLight ? '☀️' : '🌙';
+            label.textContent = isLight ? 'Aydınlık' : 'Koyu';
+        }
+
+        // Load saved theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('tatilPlaniTheme');
+            if (savedTheme === 'light') {
+                document.body.classList.add('light-mode');
+                document.getElementById('themeIcon').textContent = '☀️';
+                document.getElementById('themeLabel').textContent = 'Aydınlık';
+            }
+        });
+
+        // ============ GOOGLE MAPS FUNCTIONS ============
+        function openMap(lat, lng, label) {
+            const url = `https://www.google.com/maps?q=${lat},${lng}&hl=tr`;
+            window.open(url, '_blank');
+        }
+
+        function openMapAddress(address) {
+            const url = `https://www.google.com/maps/search/${encodeURIComponent(address)}?hl=tr`;
+            window.open(url, '_blank');
+        }
+
+        function openMapDirections(fromLat, fromLng, toLat, toLng) {
+            const url = `https://www.google.com/maps/dir/${fromLat},${fromLng}/${toLat},${toLng}?hl=tr`;
+            window.open(url, '_blank');
+        }
+
+        function openMapPlace(placeName, address) {
+            const query = address ? `${placeName}, ${address}` : placeName;
+            const url = `https://www.google.com/maps/search/${encodeURIComponent(query)}?hl=tr`;
+            window.open(url, '_blank');
+        }
+
+        // YENİ: Otel adını Google Maps'te arayarak doğru konumu bul
+        function searchHotelOnGoogleMaps(hotelName, city) {
+            const query = city ? `${hotelName}, ${city}` : hotelName;
+            const url = `https://www.google.com/maps/search/${encodeURIComponent(query)}?hl=tr`;
+            window.open(url, '_blank');
+        }
+
+        // YENİ: İki şehir/yer arası tüm ulaşım seçenekleriyle yol tarifi
+        function openDirectionsWithTransit(fromQuery, toQuery) {
+            const url = `https://www.google.com/maps/dir/${encodeURIComponent(fromQuery)}/${encodeURIComponent(toQuery)}?hl=tr&travelmode=transit`;
+            window.open(url, '_blank');
+        }
+
+        // YENİ: İki koordinat arası tüm ulaşım seçenekleriyle yol tarifi
+        function openDirectionsAllModes(fromLat, fromLng, toLat, toLng) {
+            const url = `https://www.google.com/maps/dir/${fromLat},${fromLng}/${toLat},${toLng}?hl=tr`;
+            window.open(url, '_blank');
+        }
+
+        // SVG route node click handler - şehir adıyla Google Maps araması yap
+        function openCityMap(cityName) {
+            const url = `https://www.google.com/maps/search/${encodeURIComponent(cityName)}?hl=tr`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
